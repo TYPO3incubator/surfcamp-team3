@@ -6,6 +6,9 @@ webserver_type: nginx-fpm
 xdebug_enabled: false
 additional_hostnames: []
 additional_fqdns: []
+hooks:
+    post-start:
+        - exec: composer install --no-progress
 database:
     type: mariadb
     version: "10.11"
