@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7381263fe25ec6f3ccb5f3bfa181728b",
+    "content-hash": "b83b9dd184dfcaf6784a6c51e6bb3297",
     "packages": [
         {
             "name": "bacon/bacon-qr-code",
@@ -2246,6 +2246,40 @@
                 "source": "https://github.com/ralouphie/getallheaders/tree/develop"
             },
             "time": "2019-03-08T08:55:37+00:00"
+        },
+        {
+            "name": "surfcamp/restaurant",
+            "version": "dev-main",
+            "dist": {
+                "type": "path",
+                "url": "local_packages/restaurant",
+                "reference": "e609842af66c299f292e57a34d26573769daf311"
+            },
+            "require": {
+                "typo3/cms-core": "dev-main",
+                "typo3/cms-rte-ckeditor": "dev-main"
+            },
+            "type": "typo3-cms-extension",
+            "extra": {
+                "typo3/cms": {
+                    "extension-key": "restaurant"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Surfcamp\\Restaurant\\": "Classes/"
+                }
+            },
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "homepage": "https://team3.surfcamp.typo3.com/",
+            "keywords": [
+                "TYPO3 CMS"
+            ],
+            "transport-options": {
+                "relative": true
+            }
         },
         {
             "name": "symfony/cache",
@@ -7535,6 +7569,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
+        "surfcamp/restaurant": 20,
         "typo3/cms-backend": 20,
         "typo3/cms-belog": 20,
         "typo3/cms-beuser": 20,

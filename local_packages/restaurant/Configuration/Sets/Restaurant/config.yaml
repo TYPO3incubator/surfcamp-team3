@@ -1,0 +1,5 @@
+name: surfcamp/restaurant
+label: Restaurant
+
+dependencies:
+  - typo3/seo-xml-sitemap
