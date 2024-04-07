@@ -1,11 +1,14 @@
 name: surfcamp-team3
 type: php
 docroot: public
-php_version: "8.2"
+php_version: "8.3"
 webserver_type: nginx-fpm
 xdebug_enabled: false
 additional_hostnames: []
 additional_fqdns: []
+hooks:
+    post-start:
+        - exec: composer install --no-progress
 database:
     type: mariadb
     version: "10.11"
