@@ -14,5 +14,17 @@ languages:
     locale: en_US.UTF-8
     navigationTitle: English
     flag: us
+  -
+    title: Deutsch
+    enabled: true
+    locale: de_DE
+    hreflang: de-DE
+    base: /de
+    websiteTitle: Restaurant
+    navigationTitle: ''
+    fallbackType: strict
+    fallbacks: ''
+    flag: de
+    languageId: 1
 rootPageId: 1
 websiteTitle: ''
