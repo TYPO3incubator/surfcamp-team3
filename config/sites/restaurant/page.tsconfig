@@ -1,1 +1,1 @@
-@import 'EXT:restaurant/Configuration/TsConfig/All.tsconfig'
+@import 'EXT:restaurant/Configuration/TsConfig/Page/All.tsconfig'
