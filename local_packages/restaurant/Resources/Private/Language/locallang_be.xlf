@@ -7,7 +7,7 @@
         </header>
         <body>
             <trans-unit id="backend_layout.home">
-                <source>home</source>
+                <source>Home</source>
             </trans-unit>
             <trans-unit id="backend_layout.column.normal">
                 <source>Normal</source>
