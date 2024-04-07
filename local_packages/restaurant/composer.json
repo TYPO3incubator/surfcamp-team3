@@ -1,0 +1,22 @@
+{
+    "name": "surfcamp/restaurant",
+    "type": "typo3-cms-extension",
+    "description": "",
+    "homepage": "https://team3.surfcamp.typo3.com/",
+    "license": ["GPL-2.0-or-later"],
+    "keywords": ["TYPO3 CMS"],
+    "require": {
+        "typo3/cms-core": "dev-main",
+        "typo3/cms-rte-ckeditor": "dev-main"
+    },
+    "autoload": {
+        "psr-4": {
+            "Surfcamp\\Restaurant\\": "Classes/"
+        }
+    },
+    "extra": {
+        "typo3/cms": {
+            "extension-key": "restaurant"
+        }
+    }
+}

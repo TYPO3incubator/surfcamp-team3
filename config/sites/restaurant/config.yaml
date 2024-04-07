@@ -3,6 +3,8 @@ baseVariants:
   -
     condition: 'applicationContext == "Development/Devbox"'
     base: 'https://surfcamp-team3.ddev.site/'
+dependencies:
+  - surfcamp/restaurant
 languages:
   -
     title: English
