@@ -1,0 +1,16 @@
+base: 'https://team3.surfcamp.typo3.com/'
+baseVariants:
+  -
+    condition: 'applicationContext == "Development/Devbox"'
+    base: 'https://surfcamp-team3.ddev.site/'
+languages:
+  -
+    title: English
+    enabled: true
+    languageId: 0
+    base: /
+    locale: en_US.UTF-8
+    navigationTitle: English
+    flag: us
+rootPageId: 1
+websiteTitle: ''
