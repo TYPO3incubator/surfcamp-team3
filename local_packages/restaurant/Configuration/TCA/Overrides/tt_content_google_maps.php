@@ -16,7 +16,6 @@ defined('TYPO3') || die();
 
 $temporaryColumn = [
     'source_url' => [
-        'exclude' => 1,
         'label' => 'LLL:EXT:restaurant/Resources/Private/Language/locallang_db.xlf:tt_content.type.google_maps.source_url',
         'config' => [
             'type' => 'text',
