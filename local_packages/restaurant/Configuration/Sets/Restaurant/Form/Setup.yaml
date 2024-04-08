@@ -1,0 +1,7 @@
+TYPO3:
+  CMS:
+    Form:
+      persistenceManager:
+        allowSaveToExtensionPaths: false
+        allowedExtensionPaths:
+          10: EXT:restaurant/Configuration/Sets/Restaurant/Form/FormDefinition/
