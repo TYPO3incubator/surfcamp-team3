@@ -1,0 +1,3 @@
+tt_content.table >
+tt_content.table =< lib.contentElement
+tt_content.table.templateName = Table
