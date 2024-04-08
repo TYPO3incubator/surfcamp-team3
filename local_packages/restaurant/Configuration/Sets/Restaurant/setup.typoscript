@@ -1,1 +1,2 @@
 @import './TypoScript/Page/*.typoscript'
+@import './TypoScript/ContentElement/*.typoscript'
