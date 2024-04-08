@@ -1,0 +1,26 @@
+page.10 {
+    dataProcessing {
+        10 = menu
+        10.as = mainNavigation
+
+        20 = menu
+        20 {
+            as = footerNavigation
+            special = directory
+            special.value = 12
+        }
+
+        30 = menu
+        30 {
+            as = socialMediaNavigation
+            special = directory
+            special.value = 16
+        }
+
+        40 = TYPO3\CMS\Frontend\DataProcessing\LanguageMenuProcessor
+        40 {
+            languages = auto
+            as = languageNavigation
+        }
+    }
+}
