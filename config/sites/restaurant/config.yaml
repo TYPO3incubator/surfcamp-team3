@@ -19,7 +19,7 @@ languages:
     enabled: true
     locale: de_DE
     hreflang: de-DE
-    base: /de
+    base: /de/
     websiteTitle: Restaurant
     navigationTitle: ''
     fallbackType: strict
