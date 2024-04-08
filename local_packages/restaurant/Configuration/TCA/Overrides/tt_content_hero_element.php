@@ -1,6 +1,6 @@
 <?php
 
-$GLOBALS['TCA']['tt_content']['columns']['CType']['config']['items']['3']['label'] = 'Hero Element';
+$GLOBALS['TCA']['tt_content']['columns']['CType']['config']['items']['3']['label'] = 'LLL:EXT:restaurant/Resources/Private/Language/locallang_db.xlf:tt_content.type.image.hero_element';
 
 $temporaryColumn = [
     'cta_link1' => [
