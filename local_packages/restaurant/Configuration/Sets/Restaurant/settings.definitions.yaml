@@ -1,0 +1,21 @@
+settings:
+  restaurant.companyName:
+    default: 'Restaurant'
+    label: 'Company name'
+    type: string
+    description: 'Define the company name of this site'
+  restaurant.brandColor:
+    default: '#000'
+    label: 'Brand color'
+    type: color
+    description: 'Define the brand color of this site'
+  restaurant.secondaryColor:
+    default: '#000'
+    label: 'Secondary color'
+    type: color
+    description: 'Define the secondary color of this site'
+  restaurant.thirdColor:
+    default: '#000'
+    label: 'third color'
+    type: color
+    description: 'Define the third color of this site'
