@@ -28,3 +28,9 @@ languages:
     languageId: 1
 rootPageId: 1
 websiteTitle: ''
+routeEnhancers:
+  PageTypeSuffix:
+    type: PageType
+    map:
+      /: 0
+      sitemap.xml: 1533906435
