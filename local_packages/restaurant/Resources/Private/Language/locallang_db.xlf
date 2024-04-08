@@ -15,6 +15,13 @@
             <trans-unit id="tt_content.type.google_maps.source_url">
                 <source>Source URL</source>
             </trans-unit>
+
+            <trans-unit id="tt_content.type.image.cta_link1">
+                <source>CTA link for Reservation</source>
+            </trans-unit>
+            <trans-unit id="tt_content.type.image.cta_link2">
+                <source>CTA link for Menu</source>
+            </trans-unit>
         </body>
     </file>
 </xliff>
