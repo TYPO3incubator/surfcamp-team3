@@ -3,19 +3,54 @@ settings:
     default: 'Restaurant'
     label: 'Company name'
     type: string
-    description: 'Define the company name of this site'
-  restaurant.brandColor:
+    description: 'Define the company name of this site.'
+  restaurant.companyAddress:
+    default: 'Example street'
+    label: 'Company address'
+    type: string
+    description: 'Define the company address of company.'
+  restaurant.openingHours:
+    default: 'Mon - Sun 12:00 - 22:00'
+    label: 'Opening hours'
+    type: string
+    description: 'Define the opening hours of company.'
+  restaurant.contact.phone:
+    default: '00 000 000 000'
+    label: 'Phone number'
+    type: string
+    description: 'Define the phone number of this site.'
+  restaurant.contact.email:
+    default: 'example@foo.com'
+    label: 'email.com'
+    type: string
+    description: 'Define the email of this site.'
+  restaurant.colors.brandColor:
     default: '#000'
     label: 'Brand color'
     type: color
-    description: 'Define the brand color of this site'
-  restaurant.secondaryColor:
+    description: 'Define the brand color of this site.'
+  restaurant.colors.secondaryColor:
     default: '#000'
     label: 'Secondary color'
     type: color
-    description: 'Define the secondary color of this site'
-  restaurant.thirdColor:
+    description: 'Define the secondary color of this site.'
+  restaurant.colors.thirdColor:
     default: '#000'
     label: 'third color'
     type: color
-    description: 'Define the third color of this site'
+    description: 'Define the third color of this site.'
+  restaurant.socialMedia.facebook:
+    default: 'https://facebook.com'
+    label: 'Facebook URL'
+    type: string
+    description: 'Define the Facebook URL'
+  restaurant.socialMedia.instagram:
+    default: 'https://instagram.com'
+    label: 'Instagram URL'
+    type: string
+    description: 'Define the Instagram URL'
+  restaurant.socialMedia.x:
+    default: 'https://x.com'
+    label: 'X URL'
+    type: string
+    description: 'Define the X URL'
