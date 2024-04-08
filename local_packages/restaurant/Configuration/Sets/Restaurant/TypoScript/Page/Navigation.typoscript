@@ -10,13 +10,6 @@ page.10 {
             special.value = 12
         }
 
-        30 = menu
-        30 {
-            as = socialMediaNavigation
-            special = directory
-            special.value = 16
-        }
-
         40 = TYPO3\CMS\Frontend\DataProcessing\LanguageMenuProcessor
         40 {
             languages = auto
