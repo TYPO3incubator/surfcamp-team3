@@ -1,0 +1,3 @@
+tt_content.google_maps >
+tt_content.google_maps =< lib.contentElement
+tt_content.google_maps.templateName = GoogleMaps
