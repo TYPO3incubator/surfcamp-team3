@@ -16,6 +16,10 @@
                 <source>Source URL</source>
             </trans-unit>
 
+
+            <trans-unit id="tt_content.type.image.hero_element">
+                <source>Hero element</source>
+            </trans-unit>
             <trans-unit id="tt_content.type.image.cta_link1">
                 <source>CTA link for Reservation</source>
             </trans-unit>

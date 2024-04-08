@@ -1,0 +1,3 @@
+tt_content.hero_element >
+tt_content.hero_element =< lib.contentElement
+tt_content.hero_element.templateName = HeroElement
