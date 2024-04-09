@@ -1,21 +1,22 @@
 <?php
-
 defined('TYPO3') || die();
 
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPlugin(
-    [
-        'LLL:EXT:restaurant/Resources/Private/Language/locallang_db.xlf:tt_content.type.gallery',
-        'gallery',
-        'content-gallery',
-        'default',
-        'LLL:EXT:restaurant/Resources/Private/Language/locallang_db.xlf:tt_content.type.gallery.description',
-    ],
-    'CType',
-    'restaurant'
-);
+call_user_func(
+    static function ($extensionKey) {
+        \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPlugin(
+            [
+                'LLL:EXT:' . $extensionKey . '/Resources/Private/Language/locallang_db.xlf:tt_content.type.gallery',
+                'gallery',
+                'content-gallery',
+                'default',
+                'LLL:EXT:' . $extensionKey . '/Resources/Private/Language/locallang_db.xlf:tt_content.type.gallery.description',
+            ],
+            'CType',
+            'restaurant'
+        );
 
-$GLOBALS['TCA']['tt_content']['types']['gallery'] = [
-    'showitem' => '
+        $GLOBALS['TCA']['tt_content']['types']['gallery'] = [
+            'showitem' => '
                 --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:general,
                     --palette--;;general,
                     --palette--;;headers,
@@ -38,11 +39,13 @@ $GLOBALS['TCA']['tt_content']['types']['gallery'] = [
                     rowDescription,
                 --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:extended,
             ',
-];
+        ];
 
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTCAtypes(
-    'tt_content',
-    'gallery',
-    '',
-    'after:header'
+        \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTCAtypes(
+            'tt_content',
+            'gallery',
+            '',
+            'after:header'
+        );
+    }, 'restaurant'
 );

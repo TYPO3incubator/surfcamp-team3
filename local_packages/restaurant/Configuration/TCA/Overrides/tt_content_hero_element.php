@@ -1,35 +1,38 @@
 <?php
+defined('TYPO3') || die();
 
-$GLOBALS['TCA']['tt_content']['columns']['CType']['config']['items']['3']['label'] = 'LLL:EXT:restaurant/Resources/Private/Language/locallang_db.xlf:tt_content.type.image.hero_element';
+call_user_func(
+    static function ($extensionKey) {
+        $GLOBALS['TCA']['tt_content']['columns']['CType']['config']['items']['3']['label'] =  'LLL:EXT:' . $extensionKey . '/Resources/Private/Language/locallang_db.xlf:tt_content.type.image.hero_element';
 
-$temporaryColumn = [
-    'cta_link1' => [
-        'label' => 'LLL:EXT:restaurant/Resources/Private/Language/locallang_db.xlf:tt_content.type.image.cta_link1',
-        'config' => [
-            'type' => 'input',
-            'renderType' => 'inputLink',
-            'size' => 50,
-            'eval' => 'trim',
-        ],
-    ],
-    'cta_link2' => [
-        'label' => 'LLL:EXT:restaurant/Resources/Private/Language/locallang_db.xlf:tt_content.type.image.cta_link2',
-        'config' => [
-            'type' => 'input',
-            'renderType' => 'inputLink',
-            'size' => 50,
-            'eval' => 'trim',
-        ],
-    ]
-];
+        $temporaryColumn = [
+            'cta_link1' => [
+                'label' =>  'LLL:EXT:' . $extensionKey . '/Resources/Private/Language/locallang_db.xlf:tt_content.type.image.cta_link1',
+                'config' => [
+                    'type' => 'input',
+                    'renderType' => 'inputLink',
+                    'size' => 50,
+                    'eval' => 'trim',
+                ],
+            ],
+            'cta_link2' => [
+                'label' =>  'LLL:EXT:' . $extensionKey . '/Resources/Private/Language/locallang_db.xlf:tt_content.type.image.cta_link2',
+                'config' => [
+                    'type' => 'input',
+                    'renderType' => 'inputLink',
+                    'size' => 50,
+                    'eval' => 'trim',
+                ],
+            ]
+        ];
 
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns(
-    'tt_content',
-    $temporaryColumn
-);
+        \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns(
+            'tt_content',
+            $temporaryColumn
+        );
 
-$GLOBALS['TCA']['tt_content']['types']['image'] = [
-    'showitem' => '
+        $GLOBALS['TCA']['tt_content']['types']['image'] = [
+            'showitem' => '
                 --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:general,
                     --palette--;;general,
                     --palette--;;headers,
@@ -54,4 +57,6 @@ $GLOBALS['TCA']['tt_content']['types']['image'] = [
                     rowDescription,
                 --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:extended,
             ',
-];
+        ];
+    }, 'restaurant'
+);
