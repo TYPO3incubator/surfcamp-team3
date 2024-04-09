@@ -1,3 +1,4 @@
 @import 'EXT:seo/Configuration/TypoScript/XmlSitemap/setup.typoscript'
 @import './TypoScript/Page/*.typoscript'
+@import './TypoScript/Helper/*.typoscript'
 @import './TypoScript/ContentElement/*.typoscript'
