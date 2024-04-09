@@ -1,0 +1,34 @@
+<!-- CustomMenu.html - A Fluid template for the restaurant menu using a table content element -->
+<f:layout name="Default" />
+<f:section name="Main">
+    <h2>Our Menu</h2>
+    <table class="table menu-table">
+        <thead>
+        <tr>
+            <th>Dish Name</th>
+            <th>Description</th>
+            <th>Price</th>
+            <th>Label</th>
+        </tr>
+        </thead>
+        <tbody>
+        <f:for each="{data.tx_yourExtension_dishes}" as="dish">
+            <tr>
+                <td>{dish.name}</td>
+                <td>{dish.description}</td>
+                <td>{dish.price -> f:format.currency(currencySign: 'EUR')}</td>
+                <td>
+                    <f:if condition="{dish.label}">
+                        <f:then>
+                            {dish.label}
+                        </f:then>
+                        <f:else>
+                            -
+                        </f:else>
+                    </f:if>
+                </td>
+            </tr>
+        </f:for>
+        </tbody>
+    </table>
+</f:section>
