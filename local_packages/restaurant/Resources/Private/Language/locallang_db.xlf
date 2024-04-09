@@ -26,6 +26,13 @@
             <trans-unit id="tt_content.type.image.cta_link2">
                 <source>CTA link for Menu</source>
             </trans-unit>
+
+            <trans-unit id="tt_content.type.gallery">
+                <source>Gallery</source>
+            </trans-unit>
+            <trans-unit id="tt_content.type.gallery.description">
+                <source>Image gallery</source>
+            </trans-unit>
         </body>
     </file>
 </xliff>

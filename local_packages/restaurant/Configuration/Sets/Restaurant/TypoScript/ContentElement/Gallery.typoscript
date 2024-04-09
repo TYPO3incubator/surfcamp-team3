@@ -1,0 +1,3 @@
+tt_content.gallery >
+tt_content.gallery =< lib.contentElement
+tt_content.gallery.templateName = Gallery
