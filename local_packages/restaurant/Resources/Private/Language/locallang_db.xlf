@@ -33,6 +33,13 @@
             <trans-unit id="tt_content.type.gallery.description">
                 <source>Image gallery</source>
             </trans-unit>
+
+            <trans-unit id="tt_content.type.textpic.teaser">
+                <source>Teaser</source>
+            </trans-unit>
+            <trans-unit id="tt_content.type.textpic.teaser.description">
+                <source>Teaser element with text and image fields</source>
+            </trans-unit>
         </body>
     </file>
 </xliff>
