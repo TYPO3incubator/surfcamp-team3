@@ -11865,4 +11865,35 @@ html {
   font-size: 16px;
 }
 
+html body {
+  background-color: red;
+  color: var(--color-default);
+}
+html body .header {
+  background: #fff;
+  transition: all 0.5s;
+  z-index: 997;
+  height: 90px;
+  border-bottom: 1px solid #fff;
+  font-family: Inter, sans-serif;
+}
+html body .header div div.collapse ul.navbar-nav {
+  padding-left: 50px;
+}
+html body .header div div.collapse ul.navbar-nav li.nav-item {
+  font-weight: 600;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+html body .header div div.collapse ul.navbar-nav li.nav-item .nav-link {
+  border-bottom: 3px solid transparent;
+}
+html body .header div div.collapse ul.navbar-nav li.nav-item .nav-link:hover {
+  border-bottom: 3px solid grey;
+}
+html body .header div div.collapse ul.navbar-nav li.nav-item .nav-link:focus {
+  border: 1px solid grey;
+  border-radius: 2px;
+}
+
 /*# sourceMappingURL=styles.css.map */

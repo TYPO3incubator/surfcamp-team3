@@ -1,0 +1,17 @@
+<header id="header" class="header fixed-top d-flex align-items-center">
+    <div class="container d-flex align-items-center justify-content-between">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="logo d-flex align-items-center me-auto me-lg-0" href="#"><f:image src="EXT:restaurant/Resources/Public/Images/restaurant-icon-placeholder.svg" alt="Restaurant Icon" />
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <f:render partial="MainNavigation" arguments="{mainNavigation: mainNavigation}" />
+
+            </div>
+        </nav>
+        <f:render partial="LanguageNavigation" arguments="{languageNavigation: languageNavigation}" />
+    </div>
+</header>
+
