@@ -33,6 +33,13 @@
             <trans-unit id="tt_content.type.table.menu.description">
                 <source>Element for list of dishes and pricing</source>
             </trans-unit>
+              
+            <trans-unit id="tt_content.type.gallery">
+                <source>Gallery</source>
+            </trans-unit>
+            <trans-unit id="tt_content.type.gallery.description">
+                <source>Image gallery</source>
+            </trans-unit>
 
             <trans-unit id="tt_content.type.textpic.teaser">
                 <source>Teaser</source>
