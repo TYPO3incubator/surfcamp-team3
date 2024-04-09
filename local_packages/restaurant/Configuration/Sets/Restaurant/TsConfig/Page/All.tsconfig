@@ -1,0 +1,4 @@
+@import './RTE.tsconfig'
+@import './TCEFORM.tsconfig'
+@import './TCEMAIN.tsconfig'
+@import './Mod/WebLayout/BackendLayouts.tsconfig'
