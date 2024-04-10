@@ -1,4 +1,8 @@
 <f:layout name="Default"/>
 <f:section name="Main">
-
+	<div class="{gallery.position.vertical}">
+		<f:image src="{files.0.uid}" treatIdAsReference="1"/>
+		<br>
+		<f:format.raw>{data.bodytext}</f:format.raw>
+	</div>
 </f:section>
