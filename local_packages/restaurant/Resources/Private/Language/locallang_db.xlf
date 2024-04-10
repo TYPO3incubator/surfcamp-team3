@@ -21,10 +21,16 @@
                 <source>Hero element</source>
             </trans-unit>
             <trans-unit id="tt_content.type.image.cta_link1">
-                <source>CTA link for Reservation</source>
+                <source>CTA link 1</source>
             </trans-unit>
             <trans-unit id="tt_content.type.image.cta_link2">
-                <source>CTA link for Menu</source>
+                <source>CTA link 2</source>
+            </trans-unit>
+            <trans-unit id="tt_content.type.image.cta_label1">
+                <source>CTA label 1</source>
+            </trans-unit>
+            <trans-unit id="tt_content.type.image.cta_label2">
+                <source>CTA label 2</source>
             </trans-unit>
 
             <trans-unit id="tt_content.type.table.menu">

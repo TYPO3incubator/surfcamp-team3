@@ -23,6 +23,22 @@ call_user_func(
                     'size' => 50,
                     'eval' => 'trim',
                 ],
+            ],
+            'cta_label1' => [
+                'label' =>  'LLL:EXT:' . $extensionKey . '/Resources/Private/Language/locallang_db.xlf:tt_content.type.image.cta_label1',
+                'config' => [
+                    'type' => 'input',
+                    'size' => 50,
+                    'eval' => 'trim',
+                ],
+            ],
+            'cta_label2' => [
+                'label' =>  'LLL:EXT:' . $extensionKey . '/Resources/Private/Language/locallang_db.xlf:tt_content.type.image.cta_label2',
+                'config' => [
+                    'type' => 'input',
+                    'size' => 50,
+                    'eval' => 'trim',
+                ],
             ]
         ];
 
@@ -38,6 +54,8 @@ call_user_func(
                     --palette--;;headers,
                     cta_link1,
                     cta_link2,
+                    cta_label1,
+                    cta_label2,
                 --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:images,
                     image,
                     --palette--;;mediaAdjustments,
