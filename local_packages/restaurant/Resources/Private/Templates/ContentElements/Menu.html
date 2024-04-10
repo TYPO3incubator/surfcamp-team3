@@ -1,32 +1,20 @@
-<!-- CustomMenu.html - A Fluid template for the restaurant menu using a table content element -->
 <f:layout name="Default" />
 <f:section name="Main">
-    <h2>Our Menu</h2>
     <table class="table menu-table">
         <thead>
         <tr>
-            <th>Dish Name</th>
-            <th>Description</th>
-            <th>Price</th>
-            <th>Label</th>
+            <th><f:translate key="menu.dishName" extensionName="restaurant"/></th>
+            <th><f:translate key="menu.description" extensionName="restaurant"/></th>
+            <th><f:translate key="menu.price" extensionName="restaurant"/></th>
+            <th><f:translate key="menu.label" extensionName="restaurant"/></th>
         </tr>
         </thead>
         <tbody>
-        <f:for each="{data.tx_yourExtension_dishes}" as="dish">
+        <f:for each="{table}" as="rows">
             <tr>
-                <td>{dish.name}</td>
-                <td>{dish.description}</td>
-                <td>{dish.price -> f:format.currency(currencySign: 'EUR')}</td>
-                <td>
-                    <f:if condition="{dish.label}">
-                        <f:then>
-                            {dish.label}
-                        </f:then>
-                        <f:else>
-                            -
-                        </f:else>
-                    </f:if>
-                </td>
+                <f:for each="{rows}" as="row">
+                    <td>{row}</td>
+                </f:for>
             </tr>
         </f:for>
         </tbody>
