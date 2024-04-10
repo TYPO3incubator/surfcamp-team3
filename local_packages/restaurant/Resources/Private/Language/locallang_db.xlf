@@ -27,6 +27,13 @@
                 <source>CTA link for Menu</source>
             </trans-unit>
 
+            <trans-unit id="tt_content.type.table.menu">
+                <source>Menu</source>
+            </trans-unit>
+            <trans-unit id="tt_content.type.table.menu.description">
+                <source>Element for list of dishes and pricing</source>
+            </trans-unit>
+              
             <trans-unit id="tt_content.type.gallery">
                 <source>Gallery</source>
             </trans-unit>

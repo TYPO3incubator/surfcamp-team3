@@ -2,9 +2,9 @@ styles.templates {
   # cat=content/templates/b1; type=string; label= Path of Fluid Templates for all defined content elements
   templateRootPath = EXT:restaurant/Resources/Private/Templates/ContentElements
   # cat=content/templates/b2; type=string; label= Path of Fluid Partials for all defined content elements
-  partialRootPath =  EXT:restaurant/Resources/Private/Partials/ContentElements
+  partialRootPath =  EXT:restaurant/Resources/Private/Templates/Partials/ContentElements
   # cat=content/templates/b3; type=string; label= Path of Fluid Layouts for all defined content elements
-  layoutRootPath = EXT:restaurant/Resources/Private/Layouts/ContentElements
+  layoutRootPath = EXT:restaurant/Resources/Private/Templates/Layouts/ContentElements
 }
 
 styles.content {
