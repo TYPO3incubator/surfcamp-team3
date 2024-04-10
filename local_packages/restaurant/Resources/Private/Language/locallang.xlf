@@ -6,6 +6,15 @@
             <authorEmail>surfcamp@typo3.com</authorEmail>
         </header>
         <body>
+            <trans-unit id="tt_content.hero.fe.cta_link1">
+                <source>Reservation</source>
+            </trans-unit>
+            <trans-unit id="tt_content.hero.fe.cta_link2">
+                <source>Menu</source>
+            </trans-unit>
+            <trans-unit id="tt_content.type.teaser">
+                <source>Teaser</source>
+            </trans-unit>
         </body>
     </file>
 </xliff>
