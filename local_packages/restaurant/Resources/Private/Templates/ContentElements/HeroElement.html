@@ -1,6 +1,14 @@
-<f:layout name="Standard"/>
+<f:layout name="Default"/>
 <f:section name="Main">
 	<h2>{data.header}</h2>
 	<p>{data.subheader}</p>
-	
+	<f:image src="{files.0.uid}" treatIdAsReference="1" />
+	<br>
+	<f:link.typolink parameter="{data.cta_link1}">
+		<f:translate key="tt_content.hero.fe.cta_link1" extensionName="restaurant"/>
+	</f:link.typolink>
+	<br>
+	<f:link.typolink parameter="{data.cta_link2}">
+		<f:translate key="tt_content.hero.fe.cta_link2" extensionName="restaurant"/>
+	</f:link.typolink>
 </f:section>
