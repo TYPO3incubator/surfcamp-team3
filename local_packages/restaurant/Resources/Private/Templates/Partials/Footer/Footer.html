@@ -2,7 +2,7 @@
     <div class="footerTop">
         <div class="container">
             <div class="row gy-3 mt-3 py-5">
-                <f:if condition="{settings.restaurant.companyAddress.street} || {settings.restaurant.companyAddress.plzCity}">
+                <f:if condition="{settings.restaurant.companyAddress.street} || {settings.restaurant.companyAddress.zipcodeCity}">
                     <div class="col-6 col-md d-flex" aria-labelledby="addressHeading">
                         <div class="mt-1 me-2">
                             <i class="bi bi-geo-alt icon" aria-hidden="true"></i>
@@ -16,7 +16,7 @@
                             <p>
                                 {settings.restaurant.companyAddress.street}
                                 <br/>
-                                {settings.restaurant.companyAddress.plzCity}
+                                {settings.restaurant.companyAddress.zipcodeCity}
                             </p>
                         </div>
                     </div>

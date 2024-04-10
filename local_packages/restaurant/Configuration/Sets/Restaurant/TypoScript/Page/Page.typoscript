@@ -21,21 +21,4 @@ page {
 page.10 = PAGEVIEW
 page.10 {
     paths.100 = EXT:restaurant/Resources/Private/Templates/
-    dataProcessing {
-        10 = menu
-        10.as = mainNavigation
-
-        20 = menu
-        20 {
-            as = footerNavigation
-            special = directory
-            special.value = 12
-        }
-
-        30 = TYPO3\CMS\Frontend\DataProcessing\LanguageMenuProcessor
-        30 {
-            languages = auto
-            as = languageNavigation
-        }
-    }
 }

@@ -10,10 +10,10 @@ settings:
     label: 'Company street'
     type: string
     description: 'Define the company address of company.'
-  restaurant.companyAddress.plzCity:
+  restaurant.companyAddress.zipcodeCity:
     default:
       12345 City
-    label: 'Company PLZ and City'
+    label: 'Company Zipcode and City'
     type: string
     description: 'Define the company postcode and the city.'
   restaurant.openingHours.initial:

@@ -7,7 +7,7 @@ page.10 {
         20 {
             as = footerNavigation
             special = directory
-            special.value = 2
+            special.value = 12
         }
 
         40 = TYPO3\CMS\Frontend\DataProcessing\LanguageMenuProcessor
