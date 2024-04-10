@@ -8,6 +8,5 @@
     <f:cObject typoscriptObjectPath="lib.dynamicContent" data="{pageUid: '{data.uid}', colPos: '0'}"/>
 </f:section>
 <f:section name="Footer">
-    <f:render partial="Footer"/>
-    <f:render partial="FooterNavigation" arguments="{footerNavigation: footerNavigation}"/>
+    <f:render partial="Footer/Footer" arguments="{_all}"/>
 </f:section>

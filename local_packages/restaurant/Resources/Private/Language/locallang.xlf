@@ -6,6 +6,15 @@
             <authorEmail>surfcamp@typo3.com</authorEmail>
         </header>
         <body>
+            <trans-unit id="footer.headline.address">
+                <source>Address</source>
+            </trans-unit>
+            <trans-unit id="footer.headline.reservations">
+                <source>Reservations</source>
+            </trans-unit>
+            <trans-unit id="footer.headline.openingHours">
+                <source>Opening Hours</source>
+            </trans-unit>
         </body>
     </file>
 </xliff>

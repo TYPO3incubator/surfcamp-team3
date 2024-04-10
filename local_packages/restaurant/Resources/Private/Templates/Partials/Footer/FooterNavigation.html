@@ -1,0 +1,20 @@
+<f:if condition="{footerNavigation}">
+    <div class="container">
+        <nav class="d-flex justify-content-between align-items-center py-2">
+            <p class="mb-0">
+                {settings.restaurant.copyright}
+            </p>
+
+            <ul class="d-flex justify-content-around m-0 list-unstyled">
+                <f:for each="{footerNavigation}" as="menuItem">
+                    <li class="d-block me-2">
+                        <f:link.page pageUid="{menuItem.data.uid}"
+                                     class="{f:if(condition: menuItem.active, then:'active')}">
+                            {menuItem.title}
+                        </f:link.page>
+                    </li>
+                </f:for>
+            </ul>
+        </nav>
+    </div>
+</f:if>
