@@ -10,28 +10,43 @@ html {
       border-bottom: 1px solid #fff;
       font-family: Inter, sans-serif;
       div {
-        div.collapse {
-          ul.navbar-nav {
-            padding-left: 50px;
-            li.nav-item {
-              font-weight: 600;
-              padding-left: 10px;
-              padding-right: 10px;
-              .nav-link {
-                border-bottom: 3px solid transparent;
-                &:hover {
-                  border-bottom: 3px solid grey;
-                }
-                &:focus {
-                  border: 1px solid grey;
-                  border-radius: 2px;
+        display: flex;
+        justify-content: space-between;
+        nav {
+          div.collapse {
+            ul.navbar-nav {
+              //padding-left: 5rem;
+              li.nav-item {
+                font-weight: 600;
+                padding-left: 2rem;
+                padding-right: 2rem;
+                .nav-link {
+                  border-bottom: 3px solid transparent;
+                  &:hover {
+                    border-bottom: 3px solid grey;
+                  }
+                  &:focus {
+                    border: 1px solid grey;
+                    border-radius: 2px;
+                  }
                 }
               }
             }
           }
+          div.dropdown {
+            margin-left: 100px;
+            li {
+              &:focus {
+                background-color: red;
+              }
+            }
+          }
+          .callUs {
+            border: 1px solid black;
+
+          }
         }
       }
     }
-
   }
 }
