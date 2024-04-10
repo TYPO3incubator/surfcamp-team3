@@ -1,0 +1,104 @@
+<footer>
+    <div class="footerTop">
+        <div class="container">
+            <div class="row gy-3 mt-3 py-5">
+                <f:if condition="{settings.restaurant.companyAddress.street} || {settings.restaurant.companyAddress.zipcodeCity}">
+                    <div class="col-6 col-md d-flex" aria-labelledby="addressHeading">
+                        <div class="mt-1 me-2">
+                            <i class="bi bi-geo-alt icon" aria-hidden="true"></i>
+                        </div>
+
+                        <div>
+                            <h4 id="addressHeading">
+                                <f:translate
+                                        key="LLL:EXT:restaurant/Resources/Private/Language/locallang.xlf:footer.headline.address"/>
+                            </h4>
+                            <p>
+                                {settings.restaurant.companyAddress.street}
+                                <br/>
+                                {settings.restaurant.companyAddress.zipcodeCity}
+                            </p>
+                        </div>
+                    </div>
+                </f:if>
+
+                <f:if condition="{settings.restaurant.contact.phone} || {settings.restaurant.contact.email}">
+                    <div class="col-6 col-md footer-links d-flex" aria-labelledby="contactHeading">
+                        <div class="mt-1 me-2">
+                            <i class="bi bi-calendar-check-fill" aria-hidden="true"></i>
+                        </div>
+                        <div>
+                            <h4 id="contactHeading">
+                                <f:translate
+                                        key="LLL:EXT:restaurant/Resources/Private/Language/locallang.xlf:footer.headline.reservations"/>
+                            </h4>
+                            <p>
+                                <strong>Phone:</strong>
+                                <a href="tel:{settings.restaurant.contact.phone}">
+                                    {settings.restaurant.contact.phone}
+                                </a>
+                                <br>
+                                <strong>Email:</strong>
+                                <a href="mailto:{settings.restaurant.contact.email}">
+                                    {settings.restaurant.contact.email}
+                                </a>
+                                <br>
+                            </p>
+                        </div>
+                    </div>
+                </f:if>
+
+                <f:if condition="{settings.restaurant.openingHours.initial} || {settings.restaurant.openingHours.additional}">
+                    <div class="col-6 col-md footer-links d-flex" aria-labelledby="socialMediaHeading">
+                        <div class="mt-1 me-2">
+                            <i class="bi bi-clock icon" aria-hidden="true"></i>
+                        </div>
+                        <div>
+                            <h4 id="socialMediaHeading">
+                                <f:translate
+                                        key="LLL:EXT:restaurant/Resources/Private/Language/locallang.xlf:footer.headline.openingHours"/>
+                            </h4>
+                            <p>
+                                {settings.restaurant.openingHours.initial}
+                                <br/>
+                                {settings.restaurant.openingHours.additional}
+                            </p>
+                        </div>
+                    </div>
+                </f:if>
+
+                <f:if condition="{settings.restaurant.socialMedia.facebook} || {settings.restaurant.socialMedia.instagram} || {settings.restaurant.socialMedia.x}">
+                    <div class="col-6 col-md footer-links">
+                        <h4>Follow Us</h4>
+                        <div class="socialMediaLinks d-flex">
+                            <f:if condition="{settings.restaurant.socialMedia.facebook}">
+                                <f:link.typolink parameter="{settings.restaurant.socialMedia.facebook}"
+                                                 class="socialMediaItem">
+                                    <i class="bi bi-facebook"></i>
+                                </f:link.typolink>
+                            </f:if>
+
+                            <f:if condition="{settings.restaurant.socialMedia.instagram}">
+                                <f:link.typolink parameter="{settings.restaurant.socialMedia.instagram}"
+                                                 class="socialMediaItem">
+                                    <i class="bi bi-instagram"></i>
+                                </f:link.typolink>
+                            </f:if>
+
+                            <f:if condition="{settings.restaurant.socialMedia.x}">
+                                <f:link.typolink parameter="{settings.restaurant.socialMedia.x}"
+                                                 class="socialMediaItem">
+                                    <i class="bi bi-twitter"></i>
+                                </f:link.typolink>
+                            </f:if>
+                        </div>
+                    </div>
+                </f:if>
+            </div>
+        </div>
+    </div>
+
+    <div class="footerBottom">
+        <f:render partial="Footer/FooterNavigation" arguments="{footerNavigation: footerNavigation}"/>
+    </div>
+</footer>

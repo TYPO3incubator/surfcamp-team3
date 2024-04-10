@@ -22,6 +22,16 @@
             <trans-unit id="tt_content.type.teaser">
                 <source>Teaser</source>
             </trans-unit>
+
+            <trans-unit id="footer.headline.address">
+                <source>Address</source>
+            </trans-unit>
+            <trans-unit id="footer.headline.reservations">
+                <source>Reservations</source>
+            </trans-unit>
+            <trans-unit id="footer.headline.openingHours">
+                <source>Opening Hours</source>
+            </trans-unit>
         </body>
     </file>
 </xliff>

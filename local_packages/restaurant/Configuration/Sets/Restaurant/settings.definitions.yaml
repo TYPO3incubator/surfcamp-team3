@@ -4,16 +4,28 @@ settings:
     label: 'Company name'
     type: string
     description: 'Define the company name of this site.'
-  restaurant.companyAddress:
-    default: 'Example street'
-    label: 'Company address'
+  restaurant.companyAddress.street:
+    default:
+      Example street
+    label: 'Company street'
     type: string
     description: 'Define the company address of company.'
-  restaurant.openingHours:
-    default: 'Mon - Sun 12:00 - 22:00'
+  restaurant.companyAddress.zipcodeCity:
+    default:
+      12345 City
+    label: 'Company Zipcode and City'
+    type: string
+    description: 'Define the company postcode and the city.'
+  restaurant.openingHours.initial:
+    default: 'Mon - Fr 12:00 - 22:00'
     label: 'Opening hours'
     type: string
     description: 'Define the opening hours of company.'
+  restaurant.openingHours.additional:
+    default: 'Sa - So 18:00 - 10:00'
+    label: 'Additional Opening hours'
+    type: string
+    description: 'Optionally define additional opening hours of company.'
   restaurant.contact.phone:
     default: '00 000 000 000'
     label: 'Phone number'
@@ -24,6 +36,11 @@ settings:
     label: 'email.com'
     type: string
     description: 'Define the email of this site.'
+  restaurant.copyright:
+    default: '© 2024 TEAM 3, Inc. All rights reserved.'
+    label: 'copyright'
+    type: string
+    description: 'Define the copyright of this site.'
   restaurant.colors.brandColor:
     default: '#000'
     label: 'Brand color'
@@ -40,17 +57,17 @@ settings:
     type: color
     description: 'Define the third color of this site.'
   restaurant.socialMedia.facebook:
-    default: 'https://facebook.com'
+    default: 'https://facebook.com _blank'
     label: 'Facebook URL'
-    type: string
+    type: link
     description: 'Define the Facebook URL'
   restaurant.socialMedia.instagram:
-    default: 'https://instagram.com'
+    default: 'https://instagram.com  _blank'
     label: 'Instagram URL'
-    type: string
+    type: link
     description: 'Define the Instagram URL'
   restaurant.socialMedia.x:
-    default: 'https://x.com'
+    default: 'https://x.com  _blank'
     label: 'X URL'
-    type: string
+    type: link
     description: 'Define the X URL'

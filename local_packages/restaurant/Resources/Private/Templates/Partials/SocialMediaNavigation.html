@@ -1,5 +1,5 @@
 <ul class="nav nav-pills d-flex justify-content-center flex-row">
-    <f:for each="{footerNavigation}" as="menuItem">
+    <f:for each="{socialMediaNavigation}" as="menuItem">
         <li class="nav-item {f:if(condition: menuItem.hasSubpages, then: 'dropdown')}">
             <f:if condition="{menuItem.hasSubpages}">
                 <f:then>
