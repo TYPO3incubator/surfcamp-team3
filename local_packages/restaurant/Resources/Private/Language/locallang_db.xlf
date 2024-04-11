@@ -60,6 +60,16 @@
             <trans-unit id="tt_content.type.textpic.teaser.description">
                 <source>Teaser element with text and image fields</source>
             </trans-unit>
+
+            <trans-unit id="tx_restaurant_domain_model_alert">
+                <source>Alert</source>
+            </trans-unit>
+            <trans-unit id="tx_restaurant_domain_model_alert.type">
+                <source>Type</source>
+            </trans-unit>
+            <trans-unit id="tx_restaurant_domain_model_alert.text">
+                <source>Text</source>
+            </trans-unit>
         </body>
     </file>
 </xliff>
