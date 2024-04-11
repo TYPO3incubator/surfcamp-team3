@@ -5,11 +5,15 @@
 @import '../node_modules/bootstrap/scss/bootstrap';
 @import '../node_modules/hamburgers/_sass/hamburgers/base';
 @import '../node_modules/hamburgers/_sass/hamburgers/types/arrow';
-@import '../node_modules/bootstrap-icons/font/bootstrap-icons';
 
 // Import globals
-@import 'Global/globals';
 @import 'Global/mixins';
+@import 'Global/globals';
 
-//import modules
-@import "Module/footer";
+// Import Layout
+@import "Layout/header";
+@import "Layout/footer";
+
+//import Contentelements
+
+
