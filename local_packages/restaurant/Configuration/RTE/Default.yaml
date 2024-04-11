@@ -9,6 +9,8 @@ editor:
 
         stylesSet:
             - { name: "Lead", element: "p", attributes: { 'class': 'lead' } }
+            - { name: "Btn Primary", element: "a", attributes: { 'class': 'btn btn-primary' } }
+            - { name: "Btn Outline primary", element: "a", attributes: { 'class': 'btn btn-outline-primary' } }
 
         toolbarGroups:
             - { name: styles, groups: [ format, styles ] }
