@@ -4,6 +4,27 @@
 @import './TypoScript/Helper/*.typoscript'
 @import './TypoScript/ContentElement/*.typoscript'
 
+lib.alertRenderer = RECORDS
+lib.alertRenderer {
+  tables = tx_restaurant_domain_model_alert
+  source = 2
+  dontCheckPid = 1
+  renderObj = COA
+  conf.tx_restaurant_domain_model_alert = COA
+  conf.tx_restaurant_domain_model_alert {
+    10 = TEXT
+    10 {
+      field = type
+      wrap = <div role="alert" class="|">
+    }
+    20 = TEXT
+    20 {
+      field = text
+      wrap = |</div>
+    }
+  }
+}
+
 [applicationContext matches "/^Development"]
     config.compressCss = 0
     config.compressJs = 0
