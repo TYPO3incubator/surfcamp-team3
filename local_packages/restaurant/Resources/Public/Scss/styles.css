@@ -20215,6 +20215,10 @@ a {
   height: auto;
 }
 
+.teaser .imageBox img {
+  border-radius: 20px;
+}
+
 footer a {
   color: #fff;
 }
