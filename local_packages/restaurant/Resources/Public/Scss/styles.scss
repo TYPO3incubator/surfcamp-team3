@@ -11,8 +11,10 @@
 @import 'Global/globals';
 @import 'Global/mixins';
 
+@import 'Layout/footer';
+@import 'Layout/header';
+
 //import modules
-@import 'Module/hero';
-@import "Module/teaser";
-@import "Module/footer";
+@import 'Contentelements/hero';
+@import "Contentelements/teaser";
 
