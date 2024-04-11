@@ -1,6 +1,13 @@
 $primary: #880000 !default;
-//$secondary: #fff !default;
-//$dark: #fff !default;
+$black: #000;
+$white: #fff;
+
+// focus settings
+$focusOutlineWith: 3px;
+$focusOutlineOffset: 4px;
+$focusOutlineDarkColor: $black;
+$focusOutlineLightColor: $white;
+$focusOutlineStyle: dotted;
 $heroCtaAndTextBoxBackgroundColor: rgba(255,255,255,0.7) !default;
 $ctaLinkBorderFocusColor: blue !default;
 $ctaLinkBackgroundHoverColor: red !default;

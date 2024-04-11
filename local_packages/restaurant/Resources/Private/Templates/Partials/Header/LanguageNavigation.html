@@ -1,0 +1,27 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<nav class="languageNavigation dropdown">
+    <button class="btn btn-outline-secondary dropdown-toggle" type="button" id="languageSwitcher"
+            data-bs-toggle="dropdown" aria-expanded="false">
+        <f:for each="{languageNavigation}" as="item">
+            <f:if condition="{item.active}">
+                <f:image class="flag" src="EXT:restaurant/Resources/Public/Icons/Flags/{item.flag}.webp"
+                         alt="{item.title}"/>
+            </f:if>
+        </f:for>
+    </button>
+
+    <ul class="dropdown-menu" aria-labelledby="languageSwitcher">
+        <f:for each="{languageNavigation}" as="item">
+            <f:if condition="{item.available} && !{item.active}">
+                <li>
+                    <a class="dropdown-item {f:if(condition: item.active, then: 'active')} {f:if(condition: item.available, else: 'text-muted')}"
+                       href="{item.link}" hreflang="{item.hreflang}" title="{item.title}">
+                        <f:image class="flag" src="EXT:restaurant/Resources/Public/Icons/Flags/{item.flag}.webp"
+                                 alt="{item.title}"/>
+                        {item.navigationTitle}
+                    </a>
+                </li>
+            </f:if>
+        </f:for>
+    </ul>
+</nav>

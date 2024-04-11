@@ -1,20 +1,9 @@
-html {
-  font-size: 16px;
-}
-
 a {
   color: $primary;
   text-decoration: underline;
 }
 
 :focus {
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
-  transition-timing-function: cubic-bezier(.4,0,.2,1);
-  transition-duration: .15s;
-  outline-width: var(--focus-outline-width, 3px);
-  outline-offset: var(--focus-outline-offset, 4px);
-  outline-color: var(--focus-outline-color, currentColor);
-  outline-style: var(--focus-outline-style, dotted);
+  @include focus-style;
+  box-shadow: none !important;
 }

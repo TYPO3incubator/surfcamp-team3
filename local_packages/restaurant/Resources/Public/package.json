@@ -1,8 +1,6 @@
 {
-  "name": "haewa",
+  "name": "restaurant",
   "version": "1.0.0",
-  "main": "http://www.haewa.de",
-  "repository": "git.entwicklung.rocket-media.de:29418/typo3/haewa-website-2016.git  ",
   "license": "MIT",
   "dependencies": {
     "bootstrap": "^5.3.3",
