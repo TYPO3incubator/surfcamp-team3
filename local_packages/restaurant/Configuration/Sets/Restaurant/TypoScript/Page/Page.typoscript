@@ -18,6 +18,10 @@ page {
         bootstrap = EXT:restaurant/Resources/Public/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js
         lightbox = EXT:restaurant/Resources/Public/node_modules/lightbox2/dist/js/lightbox.min.js
     }
+
+    includeCSS {
+        styles = EXT:restaurant/Resources/Public/Scss/styles.css
+    }
 }
 page.10 = PAGEVIEW
 page.10 {

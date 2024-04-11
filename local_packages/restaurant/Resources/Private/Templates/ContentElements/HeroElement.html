@@ -1,15 +1,28 @@
-<f:layout name="Default"/>
+<f:layout name="DefaultWithoutHeader"/>
 <f:section name="Main">
-
-
-	<f:render partial="Media/Gallery" arguments="{_all}"/>
-
-	<br>
-	<f:link.typolink parameter="{data.cta_link1}">
-		{data.cta_label1}
-	</f:link.typolink>
-	<br>
-	<f:link.typolink parameter="{data.cta_link2}">
-		{data.cta_label2}
-	</f:link.typolink>
+	<div class="heroSection">
+		<div class="d-flex justify-content-center align-items-center position-absolute ctaTextBox">
+			<div class="textBox text-center pb-7 p-3">
+				<div class="pt-3 px-3">
+					<f:render section="Header" optional="true">
+						<f:render partial="Header/All" arguments="{_all}"/>
+					</f:render>
+					<p>{data.subheader}</p>
+				</div>
+				<div class="row pb-6 p-3">
+					<div class="col-6">
+						<f:link.typolink parameter="{data.cta_link1}" class="ctaLink">
+							{data.cta_label1}
+						</f:link.typolink>
+					</div>
+					<div class="col-6">
+						<f:link.typolink parameter="{data.cta_link2}" class="ctaLink">
+							{data.cta_label2}
+						</f:link.typolink>
+					</div>
+				</div>
+			</div>
+		</div>
+		<f:image src="{files.0.uid}" class="img-fluid heroImage" alt="{files.0.uid.alternative}" treatIdAsReference="1"/>
+	</div>
 </f:section>
