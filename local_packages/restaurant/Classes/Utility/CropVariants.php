@@ -190,7 +190,7 @@ class CropVariants
                     'value' => 0.0
                 ],
             ],
-            'selectedRatio' => '16:9',
+            'selectedRatio' => '4:3',
             'cropArea' => [
                 'x' => 0.0,
                 'y' => 0.0,

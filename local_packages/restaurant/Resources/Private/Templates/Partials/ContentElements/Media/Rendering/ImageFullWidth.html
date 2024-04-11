@@ -8,7 +8,7 @@
             srcset="{f:uri.image(image: file, cropVariant: cropMobile, maxWidth: 768)}, {f:uri.image(image: file, cropVariant: cropMobile, maxWidth: 1536)} 2x">
     <source media="(min-width: 768px) and (max-width: 1191px)"
             srcset="{f:uri.image(image: file, cropVariant: cropMobile, maxWidth: 1191)}, {f:uri.image(image: file, cropVariant: cropMobile, maxWidth: 2382)} 2x">
-    <img class="img-fluid {class} w-100"
+    <img class="img-fluid w-100"
          title="{f:if(condition: title, then: title, else: file.title)}"
          alt="{file.alternative}"
          loading="{f:if(condition: file.properties.rm_lazyloading, then: 'lazy', else: 'eager')}"
