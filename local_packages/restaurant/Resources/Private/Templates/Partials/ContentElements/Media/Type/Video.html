@@ -1,0 +1,53 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+      xmlns:f="http://typo3.org/ns/TYPO3/Fluid/ViewHelpers"
+      xmlns:rm="Rocketmedia\WfSitepackage\ViewHelpers"
+      data-namespace-typo3-fluid="true">
+
+<f:if condition="{file.extension} == 'youtube'">
+    <f:then>
+        <div class="cookieconsent-optout-marketing videoHint">
+            <div class="videoHintText mt-4 mb-4">
+
+                <f:translate
+                    key="LLL:EXT:rm_sitepackage/Resources/Private/Language/locallang.xlf:cua.youtube"/>
+
+
+                <a class="cookieLink btn btn-primary" href="javascript:Cookiebot.renew()">
+                    <f:translate
+                        key="LLL:EXT:rm_sitepackage/Resources/Private/Language/locallang.xlf:cua.youtubeButton"/>
+                </a>
+
+
+            </div>
+        </div>
+
+        <div class="cookieconsent-optin-marketing">
+            <figure class="video video_fix">
+                <div class="embed embed-responsive embed-responsive-16by9">
+                    <f:render partial="Media/Rendering/YoutubeIframe" arguments="{file: file, data: data, settings: settings}" />
+                </div>
+
+                <f:if condition="{file.description}">
+                    <figcaption class="caption">
+                        <f:format.nl2br>{file.description}</f:format.nl2br>
+                    </figcaption>
+                </f:if>
+            </figure>
+        </div>
+    </f:then>
+
+    <f:else>
+        <figure class="video video_fix">
+            <div class="embed embed-responsive embed-responsive-16by9">
+                <f:render partial="Media/Rendering/Video" arguments="{file: file, data: data, settings: settings, additionalAttributes: additionalAttributes}"/>
+            </div>
+
+            <f:if condition="{file.description}">
+                <figcaption class="caption">
+                    <f:format.nl2br>{file.description}</f:format.nl2br>
+                </figcaption>
+            </f:if>
+        </figure>
+    </f:else>
+</f:if>
+</html>

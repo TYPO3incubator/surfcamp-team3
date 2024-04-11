@@ -1,0 +1,35 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+      xmlns:sc="http://typo3.org/ns/Surfcamp/Restaurant/ViewHelpers" data-namespace-typo3-fluid="true">
+
+<f:variable name="cropMobile" value="{f:if(condition: cropping.mobile, then: cropping.mobile, else: 'mobile')}"/>
+<f:variable name="cropDesktop" value="{f:if(condition: cropping.desktop, then: cropping.desktop, else: 'desktop')}"/>
+
+<picture class="d-block d-lg-none">
+    <source media="(max-width: 767px)"
+            srcset="{f:uri.image(image: file, cropVariant: cropMobile, maxWidth: 540)}, {f:uri.image(image: file, cropVariant: cropMobile, maxWidth: 1080)} 2x">
+    <source media="(min-width: 768px) and (max-width: 1191px)"
+            srcset="{f:uri.image(image: file, cropVariant: cropMobile, maxWidth: 720)}, {f:uri.image(image: file, cropVariant: cropMobile, maxWidth: 1440)} 2x">
+    <img class="img-fluid w-100"
+         title="{f:if(condition: title, then: title, else: file.title)}"
+         alt="{file.alternative}"
+         loading="{f:if(condition: file.properties.rm_lazyloading, then: 'lazy', else: 'eager')}"
+         src="{f:uri.image(image: file, cropVariant: cropMobile, maxWidth: 1140)}"
+         width="{sc:imageData(image: file, cropVariant: cropMobile)}"
+         height="{sc:imageData(image: file, cropVariant: cropMobile, width: 'false')}">
+</picture>
+
+<picture class="d-none d-lg-block">
+    <source media="(min-width: 1192px) and (max-width: 1639px)"
+            srcset="{f:uri.image(image: file, cropVariant: cropDesktop, maxWidth: 1160)}, {f:uri.image(image: file, cropVariant: cropDesktop, maxWidth: 2320)} 2x">
+    <source media="(min-width: 1640px)"
+            srcset="{f:uri.image(image: file, cropVariant: cropDesktop, maxWidth: 1585)}, {f:uri.image(image: file, cropVariant: cropDesktop, maxWidth: 3170)} 2x">
+    <img class="img-fluid w-100"
+         title="{f:if(condition: title, then: title, else: file.title)}"
+         alt="{file.alternative}"
+         aria-hidden="true"
+         loading="{f:if(condition: file.properties.rm_lazyloading, then: 'lazy', else: 'eager')}"
+         src="{f:uri.image(image: file, cropVariant: cropDesktop, maxWidth: 1140)}"
+         width="{sc:imageData(image: file, cropVariant: cropDesktop)}"
+         height="{sc:imageData(image: file, cropVariant: cropDesktop, width: 'false')}">
+</picture>
+</html>

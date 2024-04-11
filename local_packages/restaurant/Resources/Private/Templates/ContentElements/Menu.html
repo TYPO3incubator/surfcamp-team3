@@ -1,0 +1,22 @@
+<f:layout name="Default" />
+<f:section name="Main">
+    <table class="table menu-table">
+        <thead>
+        <tr>
+            <th><f:translate key="menu.dishName" extensionName="restaurant"/></th>
+            <th><f:translate key="menu.description" extensionName="restaurant"/></th>
+            <th><f:translate key="menu.price" extensionName="restaurant"/></th>
+            <th><f:translate key="menu.label" extensionName="restaurant"/></th>
+        </tr>
+        </thead>
+        <tbody>
+        <f:for each="{table}" as="rows">
+            <tr>
+                <f:for each="{rows}" as="row">
+                    <td>{row}</td>
+                </f:for>
+            </tr>
+        </f:for>
+        </tbody>
+    </table>
+</f:section>

@@ -1,8 +1,4 @@
-base: 'https://team3.surfcamp.typo3.com/'
-baseVariants:
-  -
-    condition: 'applicationContext == "Development/Devbox"'
-    base: 'https://surfcamp-team3.ddev.site/'
+base: '%env(TYPO3_BASE_URL)%'
 dependencies:
   - surfcamp/restaurant
 languages:
@@ -19,7 +15,7 @@ languages:
     enabled: true
     locale: de_DE
     hreflang: de-DE
-    base: /de
+    base: /de/
     websiteTitle: Restaurant
     navigationTitle: ''
     fallbackType: strict

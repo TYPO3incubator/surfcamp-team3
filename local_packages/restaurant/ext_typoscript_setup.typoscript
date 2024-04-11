@@ -1,0 +1,16 @@
+module.tx_form {
+  settings {
+    yamlConfigurations {
+      100 = EXT:restaurant/Configuration/Sets/Restaurant/Form/Setup.yaml
+      130 = EXT:restaurant/Configuration/Sets/Restaurant/Form/FormDefinition/Contactform.form.yaml
+    }
+  }
+}
+plugin.tx_form {
+  settings {
+    yamlConfigurations {
+      100 = EXT:restaurant/Configuration/Sets/Restaurant/Form/Setup.yaml
+      130 = EXT:restaurant/Configuration/Sets/Restaurant/Form/FormDefinition/Contactform.form.yaml
+    }
+  }
+}

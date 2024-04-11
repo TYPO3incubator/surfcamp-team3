@@ -1,0 +1,15 @@
+<f:layout name="Default"/>
+<f:section name="Main">
+
+
+	<f:render partial="Media/Gallery" arguments="{_all}"/>
+
+	<br>
+	<f:link.typolink parameter="{data.cta_link1}">
+		{data.cta_label1}
+	</f:link.typolink>
+	<br>
+	<f:link.typolink parameter="{data.cta_link2}">
+		{data.cta_label2}
+	</f:link.typolink>
+</f:section>

@@ -1,0 +1,14 @@
+{
+  "name": "haewa",
+  "version": "1.0.0",
+  "main": "http://www.haewa.de",
+  "repository": "git.entwicklung.rocket-media.de:29418/typo3/haewa-website-2016.git  ",
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "^5.3.3",
+    "bootstrap-icons": "^1.11.3",
+    "hamburgers": "^0.9.1",
+    "jquery": "^3.2.1",
+    "lightbox2": "^2.11"
+  }
+}
