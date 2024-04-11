@@ -116,7 +116,7 @@ return [
                     ['Light', 'alert alert-light'],
                     ['Dark', 'alert alert-dark'],
                 ],
-                'default' => 0,
+                'default' => 'alert alert-primary',
             ],
         ],
         'text' => [
