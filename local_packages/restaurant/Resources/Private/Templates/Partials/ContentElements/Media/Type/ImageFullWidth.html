@@ -1,0 +1,15 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" xmlns:bk2k="http://typo3.org/ns/Surfcamp/Restaurant/ViewHelper" data-namespace-typo3-fluid="true">
+<f:if condition="{file.link}">
+    <f:then>
+        <f:link.typolink parameter="{file.link}" title="{file.title}">
+            <f:render partial="Media/Rendering/ImageFullWidth" arguments="{file: file, data: data, settings: settings}" />
+        </f:link.typolink>
+    </f:then>
+    <f:else>
+        <f:render partial="Media/Rendering/ImageFullWidth" arguments="{file: file, data: data, settings: settings}" />
+    </f:else>
+</f:if>
+<f:if condition="{file.description}">
+    <figcaption class="caption"><f:format.nl2br>{file.description}</f:format.nl2br></figcaption>
+</f:if>
+</html>

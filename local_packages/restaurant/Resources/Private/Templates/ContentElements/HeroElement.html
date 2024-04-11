@@ -1,6 +1,9 @@
 <f:layout name="Default"/>
 <f:section name="Main">
-	<f:image src="{files.0.uid}" treatIdAsReference="1" />
+
+
+	<f:render partial="Media/Gallery" arguments="{_all}"/>
+
 	<br>
 	<f:link.typolink parameter="{data.cta_link1}">
 		{data.cta_label1}
