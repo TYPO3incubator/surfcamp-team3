@@ -38,4 +38,9 @@ module.tx_form {
         // non-cacheable actions
         [],
     );
+
+    \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTCAtypes(
+        'tx_restaurant_domain_model_product',
+        'categories'
+    );
 });
