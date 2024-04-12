@@ -20148,6 +20148,10 @@ footer .socialMediaLinks .socialMediaItem:focus {
   transition-duration: 0.15s;
 }
 
+header .navbar-brand img {
+  width: 94px;
+  height: 94px;
+}
 header nav.mainNavigation .navbar-nav .nav-item .nav-link:focus {
   outline-color: #000 !important;
   outline-width: 3px !important;
