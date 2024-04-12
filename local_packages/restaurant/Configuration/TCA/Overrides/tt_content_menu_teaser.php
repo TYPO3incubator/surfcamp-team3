@@ -21,28 +21,26 @@ call_user_func(
                 'config' => [
                     'type' => 'inline',
                     'foreign_table' => 'tt_content',
-                    'CType' => [
-                        'menu_items' => [
-                            'config' => [
-                                'overrideChildTca' => [
-                                    'columns' => [
-                                        'colPos' => [
-                                            'config' => [
-                                                'default' => 999
-                                            ],
+                    'overrideChildTca' => [
+                        'columns' => [
+                            'CType' => [
+                                'config' => [
+                                    'default' => 'header',
+                                    'items' => [
+                                        [
+                                            'label' => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:CType.header',
+                                            'description' => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:CType.header.description',
+                                            'value' => 'header',
+                                            'icon' => 'content-header',
+                                            'group' => 'default',
                                         ],
                                     ],
+                                ]
+                            ],
+                            'colPos' => [
+                                'config' => [
+                                    'default' => 999
                                 ],
-                                'items' => [
-                                    [
-                                        'label' => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:CType.header',
-                                        'description' => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:CType.header.description',
-                                        'value' => 'header',
-                                        'icon' => 'content-header',
-                                        'group' => 'default',
-                                    ],
-                                ],
-                                'default' => 'header',
                             ],
                         ],
                     ],

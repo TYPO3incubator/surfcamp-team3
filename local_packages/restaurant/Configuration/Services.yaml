@@ -6,3 +6,8 @@ services:
 
   Surfcamp\Restaurant\:
     resource: '../Classes/*'
+
+  Surfcamp\Restaurant\EventListener\ContentUsedOnPageListener:
+    tags:
+      - name: event.listener
+        identifier: 'ContentUsedOnPageListener'
