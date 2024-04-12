@@ -19,6 +19,8 @@ class ProductController extends ActionController
             'test',
             'test',
         );
+
+
         return $this->htmlResponse();
     }
 }
