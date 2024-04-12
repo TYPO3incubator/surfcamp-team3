@@ -1,5 +1,10 @@
 header {
-
+  .navbar-brand{
+    img {
+      width: 94px;
+      height: 94px;
+    }
+  }
   // main nav
   nav.mainNavigation {
     .navbar-nav {
