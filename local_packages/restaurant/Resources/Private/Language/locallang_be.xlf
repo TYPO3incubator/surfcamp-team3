@@ -12,6 +12,18 @@
             <trans-unit id="backend_layout.column.normal">
                 <source>Normal</source>
             </trans-unit>
+            <trans-unit id="tt_content.space_before_class.defaultspace">
+                <source>Default Space</source>
+            </trans-unit>
+            <trans-unit id="tt_content.space_before_class.nospace">
+                <source>No Space</source>
+            </trans-unit>
+            <trans-unit id="tt_content.space_after_class.defaultspace">
+                <source>Default Space</source>
+            </trans-unit>
+            <trans-unit id="tt_content.space_after_class.nospace">
+                <source>No Space</source>
+            </trans-unit>
         </body>
     </file>
 </xliff>

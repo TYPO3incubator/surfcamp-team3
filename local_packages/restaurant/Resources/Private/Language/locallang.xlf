@@ -22,6 +22,12 @@
             <trans-unit id="tt_content.type.teaser">
                 <source>Teaser</source>
             </trans-unit>
+            <trans-unit id="">
+                <source>By activating it, data is transmitted to the respective provider. Further information can be found in our privacy policy.</source>
+            </trans-unit>
+            <trans-unit id="">
+                <source>Show Map</source>
+            </trans-unit>
 
             <trans-unit id="footer.headline.address">
                 <source>Address</source>

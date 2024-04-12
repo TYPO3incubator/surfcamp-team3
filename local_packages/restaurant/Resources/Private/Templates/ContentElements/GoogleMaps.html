@@ -1,4 +1,30 @@
-<f:layout name="Default"/>
+<f:layout name="DefaultNoContainer"/>
 <f:section name="Main">
-	<iframe src="{data.source_url}" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+	<div class="googleMapsWrapper position-relative">
+		<div class="embed-responsive embed-responsive-googleMaps">
+			<iframe data-block-src="{data.source_url}"
+					class="embed-responsive-item map"
+					title="Google Maps"
+					allowfullscreen=""
+					style="display: none;"></iframe>
+
+			<div class="embed-responsive-item googleMapsHintBox justify-content-center align-content-center flex-column">
+				<div class="container">
+					<div class="row text-center">
+						<div class="col-12">
+							<i class="bi bi-map"></i>
+							<p class="mt-3">
+								<f:translate
+										key="LLL:EXT:restaurant/Resources/Private/Language/locallang.xlf:contentElement.googleMaps.googleMapsHintBox.description"/>
+							</p>
+							<button class="btn btn-outline-light showGoogleMap">
+								<f:translate
+										key="LLL:EXT:restaurant/Resources/Private/Language/locallang.xlf:contentElement.googleMaps.googleMapsHintBox.button"/>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 </f:section>
