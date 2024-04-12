@@ -20,6 +20,7 @@ TCEFORM {
         imagewidth.disabled = 1
         imageheight.disabled = 1
         imageborder.disabled = 1
+        header_link.disabled = 1
 
         space_before_class {
             addItems {
