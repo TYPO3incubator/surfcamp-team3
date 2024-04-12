@@ -73,6 +73,11 @@ return [
                 ],
             ],
         ],
+        'categories' => [
+            'config' => [
+                'type' => 'category'
+            ]
+        ],
         'name' => [
             'label' =>  $llPath . 'tx_restaurant_domain_model_product.name',
             'config' => [
@@ -117,7 +122,7 @@ return [
         '0' => [
             'showitem' => '
             --div--;' . $llPath . 'tx_restaurant_domain_model_product,
-                name,description,price,label,image
+                name,description,price,label,image,categories,
             --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.access,hidden,starttime,endtime,
         ',
         ],

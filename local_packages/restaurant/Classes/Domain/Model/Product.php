@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Surfcamp\Restaurant\Domain\Model;
 
+use TYPO3\CMS\Extbase\Domain\Model\Category;
 use TYPO3\CMS\Extbase\Domain\Model\FileReference;
 use TYPO3\CMS\Extbase\DomainObject\AbstractEntity;
 
@@ -12,6 +13,7 @@ class Product extends AbstractEntity
     protected string $name = '';
     protected string $description = '';
     protected string $price = '';
+    protected Category|null $categories = null;
     protected string $label = '';
     protected FileReference|null $image = null;
 
@@ -63,5 +65,15 @@ class Product extends AbstractEntity
     public function setImage(?FileReference $image): void
     {
         $this->image = $image;
+    }
+
+    public function getCategories(): ?Category
+    {
+        return $this->categories;
+    }
+
+    public function setCategories(?Category $categories): void
+    {
+        $this->categories = $categories;
     }
 }
