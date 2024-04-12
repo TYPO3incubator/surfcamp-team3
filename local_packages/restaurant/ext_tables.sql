@@ -20,3 +20,16 @@ CREATE TABLE tx_restaurant_domain_model_alert (
     KEY t3ver_oid (t3ver_oid,t3ver_wsid),
     KEY language (l10n_parent,sys_language_uid)
 );
+
+
+#
+# Table structure for table 'tx_restaurant_domain_model_product'
+#
+CREATE TABLE tx_restaurant_domain_model_product
+(
+    name varchar(255) DEFAULT '' NOT NULL,
+    description text,
+    price varchar(255) DEFAULT '' NOT NULL,
+    label varchar(255) DEFAULT '' NOT NULL,
+    image varchar(255) DEFAULT '' NOT NULL,
+);

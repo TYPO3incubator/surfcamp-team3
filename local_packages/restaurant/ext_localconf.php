@@ -24,4 +24,15 @@ module.tx_form {
     }
 }'
     );
+
+    ExtensionUtility::configurePlugin(
+    // extension name, matching the PHP namespaces (but without the vendor)
+        'BlogExample',
+        // arbitrary, but unique plugin name (not visible in the backend)
+        'PostSingle',
+        // all actions
+        [PostController::class => 'show', CommentController::class => 'create'],
+        // non-cacheable actions
+        [CommentController::class => 'create'],
+    );
 });
