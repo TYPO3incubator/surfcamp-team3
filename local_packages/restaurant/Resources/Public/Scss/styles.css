@@ -20112,6 +20112,9 @@ footer .footerTop {
   background: #000;
   color: #fff;
 }
+footer .footerTop i {
+  font-size: 1.4rem;
+}
 footer .footerBottom {
   background: #880000;
   color: #fff;
