@@ -35,7 +35,7 @@
                             </h2>
                             <p class="small">
                                 <f:if condition="{settings.restaurant.contact.phone}">
-                                    <div class="mb-2">
+                                    <div class="mb-2 small">
                                         <strong>Phone:</strong>
                                         <a href="tel:{settings.restaurant.contact.phone}">
                                             {settings.restaurant.contact.phone}
@@ -44,10 +44,12 @@
                                 </f:if>
 
                                 <f:if condition="{settings.restaurant.contact.email}">
-                                    <strong>Email:</strong>
-                                    <a href="mailto:{settings.restaurant.contact.email}">
-                                        {settings.restaurant.contact.email}
-                                    </a>
+                                    <div class="small">
+                                        <strong>Email:</strong>
+                                        <a href="mailto:{settings.restaurant.contact.email}">
+                                            {settings.restaurant.contact.email}
+                                        </a>
+                                    </div>
                                 </f:if>
                             </p>
                         </div>
