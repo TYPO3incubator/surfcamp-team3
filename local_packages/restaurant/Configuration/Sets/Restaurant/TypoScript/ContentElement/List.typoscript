@@ -1,3 +1,9 @@
 tt_content.list >
 tt_content.list =< lib.contentElement
 tt_content.list.templateName = List
+
+tt_content.list.20.restaurant_list = EXTBASEPLUGIN
+tt_content.list.20.restaurant_list {
+    extensionName = Restaurant
+    pluginName = List
+}
