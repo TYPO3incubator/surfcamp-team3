@@ -42,6 +42,15 @@ jobs:
         run: |
           echo "target=$(echo ${GITHUB_REF#refs/heads/} | sed 's/\//-/g')" >> $GITHUB_OUTPUT
 
+      - name: Setup node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+
+      - name: Install and Build
+        run: |
+          cd local_packages/restaurant/Resources/Public && npm install
+
       - name: Deployment
         env:
           SSH_AUTH_SOCK: /tmp/ssh-auth.sock
