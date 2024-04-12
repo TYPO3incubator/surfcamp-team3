@@ -1,8 +1,10 @@
 @import 'EXT:seo/Configuration/TypoScript/XmlSitemap/setup.typoscript'
+@import 'EXT:form/Configuration/TypoScript/setup.typoscript'
 @import './TypoScript/Lib/*.typoscript'
 @import './TypoScript/Page/*.typoscript'
 @import './TypoScript/Helper/*.typoscript'
 @import './TypoScript/ContentElement/*.typoscript'
+@import './TypoScript/Lib/ParseFunc.typoscript'
 
 [applicationContext matches "/^Development"]
     config.compressCss = 0

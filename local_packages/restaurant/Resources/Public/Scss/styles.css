@@ -11851,68 +11851,6 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-.hamburger {
-  padding: 15px 15px;
-  display: inline-block;
-  cursor: pointer;
-  transition-property: opacity, filter;
-  transition-duration: 0.15s;
-  transition-timing-function: linear;
-  font: inherit;
-  color: inherit;
-  text-transform: none;
-  background-color: transparent;
-  border: 0;
-  margin: 0;
-  overflow: visible;
-}
-.hamburger:hover {
-  opacity: 0.7;
-}
-
-.hamburger-box {
-  width: 40px;
-  height: 24px;
-  display: inline-block;
-  position: relative;
-}
-
-.hamburger-inner {
-  display: block;
-  top: 50%;
-  margin-top: -2px;
-}
-.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
-  width: 40px;
-  height: 4px;
-  background-color: #000;
-  border-radius: 4px;
-  position: absolute;
-  transition-property: transform;
-  transition-duration: 0.15s;
-  transition-timing-function: ease;
-}
-.hamburger-inner::before, .hamburger-inner::after {
-  content: "";
-  display: block;
-}
-.hamburger-inner::before {
-  top: -10px;
-}
-.hamburger-inner::after {
-  bottom: -10px;
-}
-
-/*
- * Arrow
- */
-.hamburger--arrow.is-active .hamburger-inner::before {
-  transform: translate3d(-8px, 0, 0) rotate(-45deg) scale(0.7, 1);
-}
-.hamburger--arrow.is-active .hamburger-inner::after {
-  transform: translate3d(-8px, 0, 0) rotate(45deg) scale(0.7, 1);
-}
-
 /*!
  * Bootstrap Icons v1.11.3 (https://icons.getbootstrap.com/)
  * Copyright 2019-2024 The Bootstrap Authors
@@ -20138,25 +20076,89 @@ textarea.form-control-lg {
   content: "賈";
 }
 
-html {
-  font-size: 16px;
-}
-
 a {
   color: #880000;
   text-decoration: underline;
 }
 
 :focus {
+  outline-color: #000 !important;
+  outline-width: 3px !important;
+  outline-offset: 4px !important;
+  outline-style: dotted !important;
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 0.15s;
-  outline-width: var(--focus-outline-width, 3px);
-  outline-offset: var(--focus-outline-offset, 4px);
-  outline-color: var(--focus-outline-color, currentColor);
-  outline-style: var(--focus-outline-style, dotted);
+  box-shadow: none !important;
+}
+
+footer a {
+  color: #fff;
+}
+footer a:focus {
+  outline-color: #fff !important;
+  outline-width: 3px !important;
+  outline-offset: 4px !important;
+  outline-style: dotted !important;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 0.15s;
+}
+footer .footerTop {
+  background: #000;
+  color: #fff;
+}
+footer .footerBottom {
+  background: #880000;
+  color: #fff;
+}
+footer .socialMediaLinks .socialMediaItem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  font-size: 16px;
+  color: #fff;
+  margin-right: 10px;
+}
+footer .socialMediaLinks .socialMediaItem:hover {
+  color: #000;
+  background: #fff;
+  transition: 0.3s;
+}
+footer .socialMediaLinks .socialMediaItem:focus {
+  outline-color: #fff !important;
+  outline-width: 3px !important;
+  outline-offset: 4px !important;
+  outline-style: dotted !important;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 0.15s;
+}
+
+header nav.mainNavigation .navbar-nav .nav-item .nav-link:focus {
+  outline-color: #000 !important;
+  outline-width: 3px !important;
+  outline-offset: 4px !important;
+  outline-style: dotted !important;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 0.15s;
+}
+header nav.languageNavigation .flag {
+  width: 19px;
+  height: 19px;
 }
 
 .heroSection {
@@ -20217,35 +20219,6 @@ a {
 
 .teaser .imageBox img {
   border-radius: 20px;
-}
-
-footer a {
-  color: #fff;
-}
-footer .footerTop {
-  background: #000;
-  color: #fff;
-}
-footer .footerBottom {
-  background: #880000;
-  color: #fff;
-}
-footer .socialMediaLinks .socialMediaItem {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  border: 1px solid #fff;
-  font-size: 16px;
-  color: #fff;
-  margin-right: 10px;
-}
-footer .socialMediaLinks .socialMediaItem:hover {
-  color: #000;
-  background: #fff;
-  transition: 0.3s;
 }
 
 /*# sourceMappingURL=styles.css.map */

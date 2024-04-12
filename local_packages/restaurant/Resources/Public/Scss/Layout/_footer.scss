@@ -2,8 +2,11 @@ footer {
   a {
     color: $white;
 
-
+    &:focus {
+      @include focus-style(true);
+    }
   }
+
   .footerTop {
     background: $black;
     color: $white;
@@ -31,6 +34,10 @@ footer {
         color: $black;
         background: $white;
         transition: 0.3s;
+      }
+
+      &:focus {
+        @include focus-style(true);
       }
     }
   }
