@@ -17,6 +17,7 @@ page {
         jquery.forceOnTop = 1
         bootstrap = EXT:restaurant/Resources/Public/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js
         lightbox = EXT:restaurant/Resources/Public/node_modules/lightbox2/dist/js/lightbox.min.js
+        jslib = EXT:restaurant/Resources/Public/JavaScript/jslib.js
     }
 
     includeCSS {
