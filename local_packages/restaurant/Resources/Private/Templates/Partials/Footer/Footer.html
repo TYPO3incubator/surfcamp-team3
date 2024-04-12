@@ -4,17 +4,17 @@
         <div class="container">
             <div class="row gy-3 mt-3 py-5">
                 <f:if condition="{settings.restaurant.companyAddress.street} || {settings.restaurant.companyAddress.zipcodeCity}">
-                    <div class="col-6 col-md d-flex" aria-labelledby="addressHeading">
-                        <div class="mt-1 me-2">
+                    <div class="col-6 col-lg d-flex" aria-labelledby="addressHeading">
+                        <div class="me-3">
                             <i class="bi bi-geo-alt icon" aria-hidden="true"></i>
                         </div>
 
                         <div>
-                            <h4 id="addressHeading">
+                            <h2 id="addressHeading" class="h6">
                                 <f:translate
                                         key="LLL:EXT:restaurant/Resources/Private/Language/locallang.xlf:footer.headline.address"/>
-                            </h4>
-                            <p>
+                            </h2>
+                            <p class="small">
                                 {settings.restaurant.companyAddress.street}
                                 <br/>
                                 {settings.restaurant.companyAddress.zipcodeCity}
@@ -24,42 +24,47 @@
                 </f:if>
 
                 <f:if condition="{settings.restaurant.contact.phone} || {settings.restaurant.contact.email}">
-                    <div class="col-6 col-md footer-links d-flex" aria-labelledby="contactHeading">
-                        <div class="mt-1 me-2">
+                    <div class="col-6 col-lg footer-links d-flex" aria-labelledby="contactHeading">
+                        <div class="me-3">
                             <i class="bi bi-calendar-check-fill" aria-hidden="true"></i>
                         </div>
                         <div>
-                            <h4 id="contactHeading">
+                            <h2 id="contactHeading" class="h6">
                                 <f:translate
                                         key="LLL:EXT:restaurant/Resources/Private/Language/locallang.xlf:footer.headline.reservations"/>
-                            </h4>
-                            <p>
-                                <strong>Phone:</strong>
-                                <a href="tel:{settings.restaurant.contact.phone}">
-                                    {settings.restaurant.contact.phone}
-                                </a>
-                                <br>
-                                <strong>Email:</strong>
-                                <a href="mailto:{settings.restaurant.contact.email}">
-                                    {settings.restaurant.contact.email}
-                                </a>
-                                <br>
+                            </h2>
+                            <p class="small">
+                                <f:if condition="{settings.restaurant.contact.phone}">
+                                    <div class="mb-2">
+                                        <strong>Phone:</strong>
+                                        <a href="tel:{settings.restaurant.contact.phone}">
+                                            {settings.restaurant.contact.phone}
+                                        </a>
+                                    </div>
+                                </f:if>
+
+                                <f:if condition="{settings.restaurant.contact.email}">
+                                    <strong>Email:</strong>
+                                    <a href="mailto:{settings.restaurant.contact.email}">
+                                        {settings.restaurant.contact.email}
+                                    </a>
+                                </f:if>
                             </p>
                         </div>
                     </div>
                 </f:if>
 
                 <f:if condition="{settings.restaurant.openingHours.initial} || {settings.restaurant.openingHours.additional}">
-                    <div class="col-6 col-md footer-links d-flex" aria-labelledby="socialMediaHeading">
-                        <div class="mt-1 me-2">
+                    <div class="col-6 col-lg footer-links d-flex" aria-labelledby="socialMediaHeading">
+                        <div class="me-3">
                             <i class="bi bi-clock icon" aria-hidden="true"></i>
                         </div>
                         <div>
-                            <h4 id="socialMediaHeading">
+                            <h2 id="socialMediaHeading" class="h6">
                                 <f:translate
                                         key="LLL:EXT:restaurant/Resources/Private/Language/locallang.xlf:footer.headline.openingHours"/>
-                            </h4>
-                            <p>
+                            </h2>
+                            <p class="small">
                                 {settings.restaurant.openingHours.initial}
                                 <br/>
                                 {settings.restaurant.openingHours.additional}
@@ -69,8 +74,8 @@
                 </f:if>
 
                 <f:if condition="{settings.restaurant.socialMedia.facebook} || {settings.restaurant.socialMedia.instagram} || {settings.restaurant.socialMedia.x}">
-                    <div class="col-6 col-md footer-links">
-                        <h4>Follow Us</h4>
+                    <div class="col-6 col-lg footer-links">
+                        <h2 class="h6">Follow Us</h2>
                         <div class="socialMediaLinks d-flex">
                             <f:if condition="{settings.restaurant.socialMedia.facebook}">
                                 <f:link.typolink parameter="{settings.restaurant.socialMedia.facebook}"
