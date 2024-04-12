@@ -5,13 +5,80 @@ header {
     .navbar-nav {
       .nav-item {
         .nav-link {
-           &:focus {
-             @include focus-style;
-           }
+          &:focus {
+            @include focus-style;
+          }
         }
       }
     }
   }
+
+  .container {
+    justify-content: space-around;
+
+    .navbar-brand {
+      @media (max-width: 992px) {
+        order: 1;
+      }
+    }
+
+    div.restContainer {
+      display: flex;
+      @media (max-width: 992px) {
+
+      }
+
+      div.d-lg-none {
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+        @media (max-width: 992px) {
+          order: 5;
+        }
+      }
+
+      button.navbar-toggler {
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+        @media (max-width: 992px) {
+          order: 6;
+        }
+      }
+
+      nav.languageNavigation {
+        order: 1;
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+        @media (max-width: 992px) {
+          order: 4;
+        }
+      }
+
+      div.d-none {
+        order: 2;
+        @media (max-width: 992px) {
+          order: 5;
+        }
+      }
+
+      div#navbarNavDropdown {
+        @media (max-width: 992px) {
+          order: 3;
+          position: absolute;
+          top: 100%;
+          left: 0;
+          width: 100%;
+          background-color: $white;
+          z-index: 100;
+        }
+      }
+
+      @media (max-width: 992px) {
+        order: 2;
+      }
+    }
+
+  }
+
 
   // lang nav
   nav.languageNavigation {
