@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2bd5439a78e7847255c50c3264349471",
+    "content-hash": "b83b9dd184dfcaf6784a6c51e6bb3297",
     "packages": [
         {
             "name": "bacon/bacon-qr-code",
@@ -1445,28 +1445,35 @@
         },
         {
             "name": "phpdocumentor/reflection-docblock",
-            "version": "5.3.0",
+            "version": "5.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpDocumentor/ReflectionDocBlock.git",
-                "reference": "622548b623e81ca6d78b721c5e029f4ce664f170"
+                "reference": "298d2febfe79d03fe714eb871d5538da55205b1a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpDocumentor/ReflectionDocBlock/zipball/622548b623e81ca6d78b721c5e029f4ce664f170",
-                "reference": "622548b623e81ca6d78b721c5e029f4ce664f170",
+                "url": "https://api.github.com/repos/phpDocumentor/ReflectionDocBlock/zipball/298d2febfe79d03fe714eb871d5538da55205b1a",
+                "reference": "298d2febfe79d03fe714eb871d5538da55205b1a",
                 "shasum": ""
             },
             "require": {
+                "doctrine/deprecations": "^1.1",
                 "ext-filter": "*",
-                "php": "^7.2 || ^8.0",
+                "php": "^7.4 || ^8.0",
                 "phpdocumentor/reflection-common": "^2.2",
-                "phpdocumentor/type-resolver": "^1.3",
+                "phpdocumentor/type-resolver": "^1.7",
+                "phpstan/phpdoc-parser": "^1.7",
                 "webmozart/assert": "^1.9.1"
             },
             "require-dev": {
-                "mockery/mockery": "~1.3.2",
-                "psalm/phar": "^4.8"
+                "mockery/mockery": "~1.3.5",
+                "phpstan/extension-installer": "^1.1",
+                "phpstan/phpstan": "^1.8",
+                "phpstan/phpstan-mockery": "^1.1",
+                "phpstan/phpstan-webmozart-assert": "^1.2",
+                "phpunit/phpunit": "^9.5",
+                "vimeo/psalm": "^5.13"
             },
             "type": "library",
             "extra": {
@@ -1490,15 +1497,15 @@
                 },
                 {
                     "name": "Jaap van Otterdijk",
-                    "email": "account@ijaap.nl"
+                    "email": "opensource@ijaap.nl"
                 }
             ],
             "description": "With this component, a library can provide support for annotations via DocBlocks or otherwise retrieve information that is embedded in a DocBlock.",
             "support": {
                 "issues": "https://github.com/phpDocumentor/ReflectionDocBlock/issues",
-                "source": "https://github.com/phpDocumentor/ReflectionDocBlock/tree/5.3.0"
+                "source": "https://github.com/phpDocumentor/ReflectionDocBlock/tree/5.4.0"
             },
-            "time": "2021-10-19T17:43:47+00:00"
+            "time": "2024-04-09T21:13:58+00:00"
         },
         {
             "name": "phpdocumentor/type-resolver",
@@ -5437,12 +5444,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/TYPO3-CMS/core.git",
-                "reference": "07b1db974fcfd48d7817c98cb75a22e935aa2061"
+                "reference": "2fb7b2e9344938ed52ca1ec1b3392db40d9b8649"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TYPO3-CMS/core/zipball/07b1db974fcfd48d7817c98cb75a22e935aa2061",
-                "reference": "07b1db974fcfd48d7817c98cb75a22e935aa2061",
+                "url": "https://api.github.com/repos/TYPO3-CMS/core/zipball/2fb7b2e9344938ed52ca1ec1b3392db40d9b8649",
+                "reference": "2fb7b2e9344938ed52ca1ec1b3392db40d9b8649",
                 "shasum": ""
             },
             "require": {
@@ -5571,7 +5578,7 @@
                 "issues": "https://forge.typo3.org",
                 "source": "https://github.com/typo3/typo3"
             },
-            "time": "2024-04-11T11:53:14+00:00"
+            "time": "2024-04-11T18:32:01+00:00"
         },
         {
             "name": "typo3/cms-dashboard",
@@ -5579,12 +5586,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/TYPO3-CMS/dashboard.git",
-                "reference": "b1f11a5b028148c748009d3edc949f39e21e0a4a"
+                "reference": "411a82221901c4b9bf7fc4424051da763bfd88c5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TYPO3-CMS/dashboard/zipball/b1f11a5b028148c748009d3edc949f39e21e0a4a",
-                "reference": "b1f11a5b028148c748009d3edc949f39e21e0a4a",
+                "url": "https://api.github.com/repos/TYPO3-CMS/dashboard/zipball/411a82221901c4b9bf7fc4424051da763bfd88c5",
+                "reference": "411a82221901c4b9bf7fc4424051da763bfd88c5",
                 "shasum": ""
             },
             "require": {
@@ -5635,7 +5642,7 @@
                 "issues": "https://forge.typo3.org",
                 "source": "https://github.com/typo3/typo3"
             },
-            "time": "2024-04-04T05:03:05+00:00"
+            "time": "2024-04-12T13:08:26+00:00"
         },
         {
             "name": "typo3/cms-extbase",
@@ -5643,12 +5650,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/TYPO3-CMS/extbase.git",
-                "reference": "b303eeab277f10305c1e3d03b2c64086b49b6e0e"
+                "reference": "685b81f2e9b24677331671254d21d1ab3d16f037"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TYPO3-CMS/extbase/zipball/b303eeab277f10305c1e3d03b2c64086b49b6e0e",
-                "reference": "b303eeab277f10305c1e3d03b2c64086b49b6e0e",
+                "url": "https://api.github.com/repos/TYPO3-CMS/extbase/zipball/685b81f2e9b24677331671254d21d1ab3d16f037",
+                "reference": "685b81f2e9b24677331671254d21d1ab3d16f037",
                 "shasum": ""
             },
             "require": {
@@ -5706,7 +5713,7 @@
                 "issues": "https://forge.typo3.org",
                 "source": "https://github.com/typo3/typo3"
             },
-            "time": "2024-04-07T05:58:26+00:00"
+            "time": "2024-04-12T11:00:50+00:00"
         },
         {
             "name": "typo3/cms-extensionmanager",
@@ -6025,12 +6032,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/TYPO3-CMS/frontend.git",
-                "reference": "8c9f49b2c1ce1f57793f05dab3f4db2433074201"
+                "reference": "6061e601ae18810f232dcbb7e91c0ec3e5166aa0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TYPO3-CMS/frontend/zipball/8c9f49b2c1ce1f57793f05dab3f4db2433074201",
-                "reference": "8c9f49b2c1ce1f57793f05dab3f4db2433074201",
+                "url": "https://api.github.com/repos/TYPO3-CMS/frontend/zipball/6061e601ae18810f232dcbb7e91c0ec3e5166aa0",
+                "reference": "6061e601ae18810f232dcbb7e91c0ec3e5166aa0",
                 "shasum": ""
             },
             "require": {
@@ -6083,66 +6090,7 @@
                 "issues": "https://forge.typo3.org",
                 "source": "https://github.com/typo3/typo3"
             },
-            "time": "2024-04-07T17:26:46+00:00"
-        },
-        {
-            "name": "typo3/cms-impexp",
-            "version": "dev-main",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/TYPO3-CMS/impexp.git",
-                "reference": "3c2e7274448da1d87fcdd91be00ce2873083a827"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/TYPO3-CMS/impexp/zipball/3c2e7274448da1d87fcdd91be00ce2873083a827",
-                "reference": "3c2e7274448da1d87fcdd91be00ce2873083a827",
-                "shasum": ""
-            },
-            "require": {
-                "typo3/cms-core": "13.1.*@dev"
-            },
-            "conflict": {
-                "typo3/cms": "*"
-            },
-            "default-branch": true,
-            "type": "typo3-cms-framework",
-            "extra": {
-                "branch-alias": {
-                    "dev-main": "13.1.x-dev"
-                },
-                "typo3/cms": {
-                    "Package": {
-                        "partOfFactoryDefault": true
-                    },
-                    "extension-key": "impexp"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "TYPO3\\CMS\\Impexp\\": "Classes/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "TYPO3 Core Team",
-                    "email": "typo3cms@typo3.org",
-                    "role": "Developer"
-                }
-            ],
-            "description": "TYPO3 CMS Import/Export - Tool for importing and exporting records using XML or the custom T3D format.",
-            "homepage": "https://typo3.org",
-            "support": {
-                "chat": "https://typo3.org/help",
-                "docs": "https://docs.typo3.org/c/typo3/cms-impexp/main/en-us/",
-                "issues": "https://forge.typo3.org",
-                "source": "https://github.com/typo3/typo3"
-            },
-            "time": "2024-03-29T09:47:59+00:00"
+            "time": "2024-04-12T10:12:23+00:00"
         },
         {
             "name": "typo3/cms-info",
@@ -6885,12 +6833,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Roave/SecurityAdvisories.git",
-                "reference": "31f373849a62ccfe23cba594e91b488e3ec2270b"
+                "reference": "c84ccbc6eb9a97fb6986809427e375f86a48d038"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/31f373849a62ccfe23cba594e91b488e3ec2270b",
-                "reference": "31f373849a62ccfe23cba594e91b488e3ec2270b",
+                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/c84ccbc6eb9a97fb6986809427e375f86a48d038",
+                "reference": "c84ccbc6eb9a97fb6986809427e375f86a48d038",
                 "shasum": ""
             },
             "conflict": {
@@ -7196,7 +7144,7 @@
                 "mantisbt/mantisbt": "<2.26.1",
                 "marcwillmann/turn": "<0.3.3",
                 "matyhtf/framework": "<3.0.6",
-                "mautic/core": "<4.3",
+                "mautic/core": "<4.4.12",
                 "mediawiki/core": "<1.36.2",
                 "mediawiki/matomo": "<2.4.3",
                 "mediawiki/semantic-media-wiki": "<4.0.2",
@@ -7469,6 +7417,7 @@
                 "thinkcmf/thinkcmf": "<=5.1.7",
                 "thorsten/phpmyfaq": "<3.2.2",
                 "tikiwiki/tiki-manager": "<=17.1",
+                "timber/timber": "<=2",
                 "tinymce/tinymce": "<7",
                 "tinymighty/wiki-seo": "<1.2.2",
                 "titon/framework": "<9.9.99",
@@ -7623,7 +7572,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2024-04-09T19:04:27+00:00"
+            "time": "2024-04-12T16:04:40+00:00"
         }
     ],
     "aliases": [],
@@ -7642,7 +7591,6 @@
         "typo3/cms-fluid": 20,
         "typo3/cms-form": 20,
         "typo3/cms-frontend": 20,
-        "typo3/cms-impexp": 20,
         "typo3/cms-info": 20,
         "typo3/cms-install": 20,
         "typo3/cms-lowlevel": 20,
