@@ -84,7 +84,7 @@
                 <source>Price</source>
             </trans-unit>
             <trans-unit id="tx_restaurant_domain_model_product.label">
-                <source>Label</source>
+                <source>Diet</source>
             </trans-unit>
             <trans-unit id="tx_restaurant_domain_model_product.image">
                 <source>Image</source>

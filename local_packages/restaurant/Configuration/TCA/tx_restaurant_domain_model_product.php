@@ -78,7 +78,7 @@ return [
             'config' => [
                 'type' => 'input',
                 'size' => 30,
-                'eval' => 'trim',
+                'eval' => 'trim,required',
             ],
         ],
         'description' => [
@@ -100,16 +100,32 @@ return [
         'label' => [
             'label' =>  $llPath . 'tx_restaurant_domain_model_product.label',
             'config' => [
-                'type' => 'input',
-                'size' => 30,
-                'eval' => 'trim',
+                'type' => 'select',
+                'renderType' => 'selectMultipleSideBySide',
+                'items' => [
+                    [
+                        'label' => 'Vegan',
+                        'value' => 'Vegan',
+                    ],
+                    [
+                        'label' => 'Vegetarian',
+                        'value' => 'Vegetarian',
+                    ],
+                    [
+                        'label' => 'Gluten Free',
+                        'value' => 'Gluten Free',
+                    ],
+                ],
+                'size' => 3,
+                'autoSizeMax' => 10,
             ],
         ],
         'image' => [
             'label' =>  $llPath . 'tx_restaurant_domain_model_product.image',
             'config' => [
+                'maxitems' => 1,
                 'type' => 'file',
-                'allowed' => 'common-media-types',
+                'allowed' => 'common-image-types'
             ],
         ],
     ],
@@ -117,7 +133,7 @@ return [
         '0' => [
             'showitem' => '
             --div--;' . $llPath . 'tx_restaurant_domain_model_product,
-                name,description,price,label,image
+                name,description,price,label,image,
             --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.access,hidden,starttime,endtime,
         ',
         ],
