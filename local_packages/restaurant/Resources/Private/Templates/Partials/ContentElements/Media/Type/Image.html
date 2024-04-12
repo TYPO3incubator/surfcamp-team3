@@ -12,7 +12,7 @@
                     <a href="{f:uri.image(image: file, maxHeight: '1200', maxWidth: '1200')}"
                        title="{file.title}"
                        data-caption="{file.description}"
-                       data-lightbox="{settings.lightbox.cssClass}">
+                       data-lightbox="{file.name}">
                         <f:render partial="Media/Rendering/Image" arguments="{file: file, data: data, settings: settings}" />
                     </a>
                 </f:then>
