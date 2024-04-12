@@ -45,3 +45,6 @@ $GLOBALS['TYPO3_CONF_VARS'] = array_replace_recursive($GLOBALS['TYPO3_CONF_VARS'
         'exceptionalErrors' => $_ENV['TYPO3_SYS_EXCEPTIONALERRORS'] ?? 4096,
     ],
 ]);
+
+// Disable deferred image processing due to a core bug
+unset($GLOBALS['TYPO3_CONF_VARS']['SYS']['fal']['processors']['DeferredBackendImageProcessor']);
