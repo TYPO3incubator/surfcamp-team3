@@ -37,5 +37,21 @@ TCEFORM {
             }
             keepItems = defaultspace,nospace
         }
+
+        imageorient {
+            types {
+                textpic {
+                    keepItems = 1,2
+                }
+            }
+        }
+
+        imagecols {
+            types {
+                textpic {
+                    disabled = 1
+                }
+            }
+        }
     }
 }
