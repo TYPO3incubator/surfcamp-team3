@@ -1,1 +1,80 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+      xmlns:sc="http://typo3.org/ns/Surfcamp/Restaurant/ViewHelpers" data-namespace-typo3-fluid="true">
 <f:debug>{_all}</f:debug>
+
+<section class="my-5">
+    <div class="container">
+        <div class="row">
+            <nav class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse sticky-top">
+                <div class="position-sticky pt-3">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a href="#drinks" class="nav-link">Drinks</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <f:for each="{categorizedProducts}" as="products" key="category">
+                <div class="mb-3">
+                    <h1 class="h2">{category}</h1>
+                </div>
+                <hr/>
+
+                <f:for each="{products}" as="product">
+                    <div class="col-6 col-lg-4">
+                        <div class="card">
+                            <f:image src="EXT:restaurant/Resources/Public/Images/fff.png"
+                                     class="card-img-top img-fluid"/>
+                            <div class="card-body text-center">
+                                <h5 class="card-title">{product.name}</h5>
+                                <div class="card-text">
+                                    <div class="description mb-3">
+                                        <span>{product.description}</span>
+                                    </div>
+                                    <div class="price mb-3">{product.price}</div>
+                                    <div class="label">
+                                <span class="badge rounded-pill text-bg-success"><i
+                                        class="bi bi-feather"></i> Vegan</span>
+                                        <span class="badge rounded-pill text-bg-success"><i class="bi bi-feather"></i> Vegetarian</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </f:for>
+            </f:for>
+
+            <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+
+
+                <h2 class="h3" id="drinks">Drinks</h2>
+                <hr/>
+
+                <f:for each="{products}" as="product">
+                    <div class="col-6 col-lg-4">
+                        <div class="card">
+                            <f:image src="EXT:restaurant/Resources/Public/Images/fff.png"
+                                     class="card-img-top img-fluid"/>
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Cheeseburger</h5>
+                                <div class="card-text">
+                                    <div class="description mb-3">
+                                        <span>fda fsdf dsf dsf dsf dsf dsf sdf sdf sdf ds fsdf dsf dsfdfdfdfdsaf ds fds fds</span>
+                                    </div>
+                                    <div class="price mb-3">9.99 €</div>
+                                    <div class="label">
+                                <span class="badge rounded-pill text-bg-success"><i
+                                        class="bi bi-feather"></i> Vegan</span>
+                                        <span class="badge rounded-pill text-bg-success"><i class="bi bi-feather"></i> Vegetarian</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </f:for>
+            </main>
+        </div>
+    </div>
+</section>
+
