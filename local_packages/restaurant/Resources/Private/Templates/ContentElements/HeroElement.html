@@ -1,28 +1,29 @@
 <f:layout name="DefaultNoHeader"/>
 <f:section name="Main">
-	<div class="heroSection">
-		<div class="d-flex justify-content-center align-items-center position-absolute ctaTextBox">
-			<div class="textBox text-center pb-7 p-3">
-				<div class="pt-3 px-3">
-					<f:render section="Header" optional="true">
-						<f:render partial="Header/All" arguments="{_all}"/>
-					</f:render>
-					<p>{data.subheader}</p>
-				</div>
-				<div class="row pb-6 p-3">
-					<div class="col-6">
-						<f:link.typolink parameter="{data.cta_link1}" class="ctaLink">
-							{data.cta_label1}
-						</f:link.typolink>
-					</div>
-					<div class="col-6">
-						<f:link.typolink parameter="{data.cta_link2}" class="ctaLink">
-							{data.cta_label2}
-						</f:link.typolink>
-					</div>
-				</div>
-			</div>
-		</div>
-		<f:image src="{files.0.uid}" class="img-fluid heroImage" alt="{files.0.uid.alternative}" treatIdAsReference="1"/>
-	</div>
+    <div class="heroSection">
+        <f:render partial="Media/Rendering/Image"
+                  arguments="{file: files.0, data: data, settings: settings, variants: variants}"/>
+
+        <div class="heroContent">
+            <div class="textBox text-center px-5 py-5">
+                <div class="mb-5">
+                    <f:render section="Header" optional="true">
+                        <f:render partial="Header/All" arguments="{_all}"/>
+                    </f:render>
+                </div>
+
+                <f:if condition="{data.cta_link1} && {data.cta_label1}">
+                    <f:link.typolink parameter="{data.cta_link1}" class="btn btn-primary">
+                        {data.cta_label1}
+                    </f:link.typolink>
+                </f:if>
+
+                <f:if condition="{data.cta_link2} && {data.cta_label2}">
+                    <f:link.typolink parameter="{data.cta_link2}" class="btn btn-primary ms-2">
+                        {data.cta_label2}
+                    </f:link.typolink>
+                </f:if>
+            </div>
+        </div>
+    </div>
 </f:section>
