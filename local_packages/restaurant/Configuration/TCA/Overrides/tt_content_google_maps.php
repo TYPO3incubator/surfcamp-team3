@@ -34,9 +34,7 @@ call_user_func(
         $GLOBALS['TCA']['tt_content']['types']['google_maps'] = [
             'showitem' => ' --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:general,
                    --palette--;;general,
-                   header,
-                   header_link,
-                   subheader,
+                   --palette--;;headers,
                    source_url,
                    --palette--;;language,
                    --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:appearance,
