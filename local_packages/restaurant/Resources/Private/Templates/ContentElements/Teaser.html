@@ -1,12 +1,14 @@
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
 <f:layout name="Default"/>
 <f:section name="Main">
-    <div class="teaser container">
+    <div class="teaser">
         <f:if condition="{data.imageorient} == 1">
             <f:then>
                 <div class="row align-items-center">
-                    <div class="col-12 col-md-6">
-                        <f:render section="text" arguments="{_all}"/>
+                    <div class="col-12 col-md-6 d-flex justify-content-end">
+                        <div>
+                            <f:render section="text" arguments="{_all}"/>
+                        </div>
                     </div>
 
                     <div class="col-12 col-md-6">
