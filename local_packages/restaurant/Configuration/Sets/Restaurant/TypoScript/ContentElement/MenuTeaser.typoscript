@@ -1,0 +1,11 @@
+tt_content.menu_teaser >
+tt_content.menu_teaser =< lib.contentElement
+tt_content.menu_teaser {
+  templateName = MenuTeaser
+  dataProcessing.10 = database-query
+  dataProcessing.10 {
+    table = tt_content
+    uidInList.field = menu_items
+    as = menuItems
+  }
+}
