@@ -1,4 +1,7 @@
 <?php
+
+use TYPO3\CMS\Extbase\Utility\ExtensionUtility;
+
 defined('TYPO3') || die();
 
 $GLOBALS['TYPO3_CONF_VARS']['RTE']['Presets']['restaurant'] = 'EXT:restaurant/Configuration/RTE/Default.yaml';
@@ -27,12 +30,12 @@ module.tx_form {
 
     ExtensionUtility::configurePlugin(
     // extension name, matching the PHP namespaces (but without the vendor)
-        'BlogExample',
+        'restaurant',
         // arbitrary, but unique plugin name (not visible in the backend)
-        'PostSingle',
+        'List',
         // all actions
-        [PostController::class => 'show', CommentController::class => 'create'],
+        [\Surfcamp\Restaurant\Controller\ProductController::class => 'list'],
         // non-cacheable actions
-        [CommentController::class => 'create'],
+        [],
     );
 });

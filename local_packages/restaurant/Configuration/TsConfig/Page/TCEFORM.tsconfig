@@ -4,7 +4,7 @@
 TCEFORM {
     tt_content {
         CType {
-            removeItems = menu_abstract, bullets, uploads, menu_categorized_content, menu_categorized_pages, menu_pages, menu_subpages, menu_sitemap, menu_sitemap_pages, menu_recently_updated, menu_related_pages, menu_section, menu_section_pages, html, div, shortcut
+            removeItems = menu_abstract, bullets, uploads, menu_categorized_content, menu_categorized_pages, menu_pages, menu_subpages, menu_sitemap, menu_sitemap_pages, menu_recently_updated, menu_related_pages, menu_section, menu_section_pages, html, div, shortcut, restaurant_list
         }
         colPos.disabled = 1
         rowDescription.disabled = 1
