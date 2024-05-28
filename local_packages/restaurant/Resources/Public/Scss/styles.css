@@ -20213,4 +20213,52 @@ header nav.languageNavigation .flag {
   font-size: 3rem;
 }
 
+div.container form#contactform-6 {
+  background-color: #F8F8F8;
+  border-radius: 20px;
+  padding: 28px;
+  color: #880000;
+}
+div.container form#contactform-6 h2, div.container form#contactform-6 .h2 {
+  font-size: 48px;
+  font-weight: 900;
+  letter-spacing: -2px;
+}
+div.container form#contactform-6 div.form-group {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+div.container form#contactform-6 div.form-group label {
+  font-weight: 500;
+}
+div.container form#contactform-6 div.form-group div.input input {
+  background: #ffffff;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  padding-left: 20px;
+  height: 60px;
+  border: 1px solid transparent;
+  outline: none;
+  min-height: 40px;
+}
+div.container form#contactform-6 div.form-group div.input input::placeholder {
+  font-weight: 400;
+  color: #880000;
+  opacity: 0.25;
+}
+div.container form#contactform-6 div.form-group div.input textarea {
+  background: #ffffff;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  padding-left: 20px;
+  border: 1px solid transparent;
+  outline: none;
+  min-height: 156px;
+  resize: none;
+}
+div.container form#contactform-6 div.actions {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
 /*# sourceMappingURL=styles.css.map */
