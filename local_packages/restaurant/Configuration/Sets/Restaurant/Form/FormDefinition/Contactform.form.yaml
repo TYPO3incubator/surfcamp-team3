@@ -1,78 +1,123 @@
-
 renderingOptions:
-  submitButtonLabel: Submit
+  submitButtonLabel: Send Message
+
 identifier: contactform
-label: 'Contact form'
-type: Form
+label: 'Contact Form'
 prototypeName: standard
+type: Form
+
+
+
 finishers:
   -
+    identifier: EmailToReceiver
     options:
       subject: 'Your message: {subject}'
       recipients:
-        your.company@example.com: 'Your Company name'
+        your.company@example.com: 'Your Restaurant name'
       senderAddress: '{email}'
-      senderName: '{name}'
-      format: html
-      attachUploads: true
+      senderName: '{surname} {name}'
+      templateName: ContactForm
+      templateRootPaths:
+        100: 'EXT:restaurant/Resources/Private/Templates/Form/Email/Receiver/'
+      partialRootPaths:
+        100: 'EXT:restaurant/Resources/Private/Partials/Form/Email/'
+      attachUploads: false
       translation:
         language: default
       title: 'Confirmation of your message'
-    identifier: EmailToReceiver
-renderables:
+
   -
-    renderingOptions:
+    identifier: EmailToSender
+    options:
+      subject: '{subject}'
+      recipients:
+        '{email}': '{surname} {name}'
+      senderAddress: email@domain.de
+      senderName: 'Your Restaurant name'
+      templateName: ContactForm
+      templateRootPaths:
+        100: 'EXT:restaurant/Resources/Private/Templates/Form/Email/Sender/'
+      partialRootPaths:
+        100: 'EXT:restaurant/Resources/Private/Partials/Form/Email/'
+      addHtmlPart: false
+      attachUploads: false
+      useFluidEmail: true
+      title: '{name} {surname}'
+
+
+renderables:
+  - renderingOptions:
       previousButtonLabel: 'Previous step'
       nextButtonLabel: 'Next step'
     identifier: page-1
-    label: 'Contact Form'
+    label: 'Get in Touch'
     type: Page
+
     renderables:
       -
-        defaultValue: ''
         identifier: name
-        label: Name
+        label: 'Name'
         type: Text
         properties:
           fluidAdditionalAttributes:
-            placeholder: Name
+            placeholder: 'John'
             autocomplete: name
+        defaultValue: ''
         validators:
           -
             identifier: NotEmpty
       -
-        defaultValue: ''
-        identifier: subject
-        label: Subject
+        identifier: surname
+        label: 'Surname'
         type: Text
         properties:
           fluidAdditionalAttributes:
-            placeholder: Subject
+            placeholder: 'Doe'
+        defaultValue: ''
         validators:
           -
             identifier: NotEmpty
       -
-        defaultValue: ''
         identifier: email
-        label: Email
+        label: 'Mail'
         type: Email
         properties:
           fluidAdditionalAttributes:
-            placeholder: 'Email address'
+            placeholder: 'johndoe@mail.net'
             autocomplete: email
+        defaultValue: ''
         validators:
           -
             identifier: NotEmpty
           -
             identifier: EmailAddress
       -
+        identifier: address
+        label: 'Address'
+        type: Text
+        properties:
+          fluidAdditionalAttributes:
+            placeholder: 'Capitol, WA'
         defaultValue: ''
+
+      - identifier: subject
+        label: 'Subject'
+        type: Text
+        properties:
+          fluidAdditionalAttributes:
+            placeholder: 'Subject'
+        validators:
+          - identifier: NotEmpty
+        defaultValue: ''
+      -
         identifier: message
-        label: Message
+        label: 'Description'
         type: Textarea
         properties:
           fluidAdditionalAttributes:
             placeholder: ''
+        defaultValue: ''
         validators:
           -
             identifier: NotEmpty

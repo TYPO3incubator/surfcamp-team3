@@ -1,0 +1,12 @@
+Dear {form.formState.formValues.name} {form.formState.formValues.surname},
+
+thank you for your message!
+
+We received your message and will reply as soon as possible.
+
+Kind regards
+your restaurant
+
+-------------------------------------------------------------------- 
+
+<f:render partial="footer"/>
