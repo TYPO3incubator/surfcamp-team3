@@ -80,6 +80,9 @@
             <trans-unit id="tt_content.type.menu_teaser.items">
                 <source>Menu teaser items</source>
             </trans-unit>
+            <trans-unit id="tt_content.type.menu_teaser.items.header">
+                <source>Header with subline (for menu Items)</source>
+            </trans-unit>
         </body>
     </file>
 </xliff>
