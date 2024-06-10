@@ -20148,6 +20148,9 @@ footer .socialMediaLinks .socialMediaItem:focus {
   transition-duration: 0.15s;
 }
 
+header .navbar-brand img {
+  height: 94px;
+}
 header nav.mainNavigation .navbar-nav .nav-item .nav-link:focus {
   outline-color: #000 !important;
   outline-width: 3px !important;
@@ -20158,6 +20161,69 @@ header nav.mainNavigation .navbar-nav .nav-item .nav-link:focus {
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 0.15s;
+}
+header .container {
+  justify-content: space-around;
+}
+@media (max-width: 992px) {
+  header .container .navbar-brand {
+    order: 1;
+  }
+}
+header .container div.restContainer {
+  display: flex;
+}
+header .container div.restContainer div.d-lg-none {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+@media (max-width: 992px) {
+  header .container div.restContainer div.d-lg-none {
+    order: 5;
+  }
+}
+header .container div.restContainer button.navbar-toggler {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+@media (max-width: 992px) {
+  header .container div.restContainer button.navbar-toggler {
+    order: 6;
+  }
+}
+header .container div.restContainer nav.languageNavigation {
+  order: 1;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+@media (max-width: 992px) {
+  header .container div.restContainer nav.languageNavigation {
+    order: 4;
+  }
+}
+header .container div.restContainer div.d-none {
+  order: 2;
+}
+@media (max-width: 992px) {
+  header .container div.restContainer div.d-none {
+    order: 5;
+  }
+}
+@media (max-width: 992px) {
+  header .container div.restContainer div#navbarNavDropdown {
+    order: 3;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    z-index: 100;
+  }
+}
+@media (max-width: 992px) {
+  header .container div.restContainer {
+    order: 2;
+  }
 }
 header nav.languageNavigation .flag {
   width: 19px;
