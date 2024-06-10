@@ -33,7 +33,7 @@ finishers:
       subject: '{subject}'
       recipients:
         '{email}': '{surname} {name}'
-      senderAddress: email@domain.de
+      senderAddress: email@example.com
       senderName: 'Your Restaurant name'
       templateName: ContactForm
       templateRootPaths:
