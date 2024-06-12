@@ -19,7 +19,7 @@ mod {
                         }
                     }
                 }
-                icon = EXT:restaurant/Resources/Public/Images/BackendLayouts/eat-food-pizza-slice-svgrepo-com.svg
+                icon = EXT:restaurant/Resources/Public/Images/BackendLayouts/example.svg
             }
         }
     }
