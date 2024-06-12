@@ -5,3 +5,14 @@ TYPO3:
         allowSaveToExtensionPaths: false
         allowedExtensionPaths:
           100: EXT:restaurant/Configuration/Sets/Restaurant/Form/FormDefinition
+      prototypes:
+        standard:
+          formElementsDefinition:
+            Form:
+              renderingOptions:
+                templateRootPaths:
+                  300: 'EXT:restaurant/Resources/Private/Extensions/Form/Templates/'
+                partialRootPaths:
+                  300: 'EXT:restaurant/Resources/Private/Extensions/Form/Partials/'
+                layoutRootPaths:
+                  300: 'EXT:restaurant/Resources/Private/Extensions/Form/Layouts/'
