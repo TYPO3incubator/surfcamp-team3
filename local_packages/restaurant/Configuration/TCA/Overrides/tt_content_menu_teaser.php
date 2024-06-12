@@ -21,25 +21,25 @@ call_user_func(
                 'config' => [
                     'type' => 'inline',
                     'foreign_table' => 'tt_content',
+                    'foreign_table_field' => 'parent_table',
+                    'behaviour' => ['allowLanguageSynchronization' => true],
                     'overrideChildTca' => [
                         'columns' => [
                             'CType' => [
                                 'config' => [
                                     'default' => 'header',
-                                    'items' => [
+                                    'allowed_items' => [
                                         [
-                                            'label' => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:CType.header',
-                                            'description' => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:CType.header.description',
-                                            'value' => 'header',
-                                            'icon' => 'content-header',
-                                            'group' => 'default',
+                                            'label' => 'LLL:EXT:' . $extensionKey . '/Resources/Private/Language/locallang_db.xlf:tt_content.type.menu_teaser.items.header',
+                                            'value' => 'header'
                                         ],
                                     ],
-                                ]
+                                    'itemsProcFunc' => \Surfcamp\Restaurant\Utility\FilterCtype::class . '->itemsProcFunc',
+                                ],
                             ],
                             'colPos' => [
                                 'config' => [
-                                    'default' => 999
+                                    'default' => '999',
                                 ],
                             ],
                         ],
