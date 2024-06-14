@@ -1,4 +1,4 @@
-# TYPO3 Surfcamp Demo Template
+# TYPO3 Restaurant Template
 
 This Git repository is intended for use by our dedicated teams at the [TYPO3 Surfcamp](https://surfcamp.typo3.com/).
 
@@ -49,3 +49,27 @@ update the sources in `./vendor/` (TYPO3 specific packages will be symlinked).
 
 Further details are mentioned in the [TYPO3 Contribution Guide](https://docs.typo3.org/m/typo3/guide-contributionworkflow/main/en-us/Index.html),
 more specifically in the [Git Setup](https://docs.typo3.org/m/typo3/guide-contributionworkflow/main/en-us/Setup/Git/Index.html) section of that guide.
+
+## Use Vite with DDEV
+Reference: https://github.com/torenware/ddev-viteserve#getting-started
+DDEV Container for Vite for starts automatically. If this is not desired, '.ddev/docker-compose.viteserve.yaml' and '.ddev/addon-metadata' must be removed.  
+To start the Development Server:
+```sh
+ddev vite-serve
+```
+
+## NPM ft. Vite 
+Start Vite Watcher: 
+```sh
+ddev npm run watch 
+```
+
+Development Build (not compressed/optimized):
+```sh
+ ddev npm run build:development
+```
+
+Production Build:
+```sh
+ ddev npm run build:production
+```

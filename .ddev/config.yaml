@@ -9,7 +9,7 @@ additional_fqdns: []
 hooks:
     post-start:
         - exec: composer install --no-progress
-        - exec: cd local_packages/restaurant/Resources/Public && npm install
+        - exec: npm install
 database:
     type: mariadb
     version: "10.11"
