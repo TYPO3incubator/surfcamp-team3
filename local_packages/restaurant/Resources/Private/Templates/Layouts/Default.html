@@ -1,3 +1,7 @@
+<html data-namespace-typo3-fluid="true"
+        xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+        xmlns:vac="http://typo3.org/ns/Praetorius/ViteAssetCollector/ViewHelpers">
+<vac:asset.vite entry="assets/app.js"/>
 <style>
     :root {
         --primary-color: {settings.restaurant.colors.brandColor};
@@ -5,7 +9,6 @@
         --tertiary-color: {settings.restaurant.colors.thirdColor};
     }
 </style>
-
 <f:cObject typoscriptObjectPath="lib.alertRenderer"/>
 <f:render section="Header" />
 <f:render section="Content" />

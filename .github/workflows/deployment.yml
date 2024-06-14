@@ -46,11 +46,14 @@ jobs:
       - name: Setup node
         uses: actions/setup-node@v4
         with:
-          node-version: 18
+          node-version: '21'
+          check-latest: true
 
-      - name: Install and Build
-        run: |
-          cd local_packages/restaurant/Resources/Public && npm install
+      - name: Install NPM dependencies
+        run: npm install
+
+      - name: Compile assets for production
+        run: npm run build:production
 
       - name: Deployment
         env:
