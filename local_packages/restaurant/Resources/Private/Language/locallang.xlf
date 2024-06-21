@@ -16,7 +16,7 @@
                 <source>Price</source>
             </trans-unit>
             <trans-unit id="menu.label">
-                <source>Label</source>
+                <source>Diet</source>
             </trans-unit>
 
             <trans-unit id="tt_content.type.teaser">

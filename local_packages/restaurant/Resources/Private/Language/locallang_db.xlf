@@ -71,6 +71,25 @@
                 <source>Text</source>
             </trans-unit>
 
+            <trans-unit id="tx_restaurant_domain_model_product">
+                <source>Product</source>
+            </trans-unit>
+            <trans-unit id="tx_restaurant_domain_model_product.name">
+                <source>Name</source>
+            </trans-unit>
+            <trans-unit id="tx_restaurant_domain_model_product.description">
+                <source>Description</source>
+            </trans-unit>
+            <trans-unit id="tx_restaurant_domain_model_product.price">
+                <source>Price</source>
+            </trans-unit>
+            <trans-unit id="tx_restaurant_domain_model_product.label">
+                <source>Diet</source>
+            </trans-unit>
+            <trans-unit id="tx_restaurant_domain_model_product.image">
+                <source>Image</source>
+            </trans-unit>
+
             <trans-unit id="tt_content.type.menu_teaser">
                 <source>Menu Teaser</source>
             </trans-unit>
