@@ -44,3 +44,6 @@ module.tx_form {
         'categories'
     );
 });
+
+// Include vite generated manifest file (global)
+$GLOBALS['TYPO3_CONF_VARS']['EXTENSIONS']['vite_asset_collector']['defaultManifest'] = 'EXT:restaurant/Resources/Public/Vite/.vite/manifest.json';

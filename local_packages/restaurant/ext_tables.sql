@@ -7,6 +7,7 @@ CREATE TABLE tt_content (
     cta_link2 varchar(255) DEFAULT '' NOT NULL,
     cta_label1 varchar(255) DEFAULT '' NOT NULL,
     cta_label2 varchar(255) DEFAULT '' NOT NULL,
+    menu_items varchar(255) DEFAULT '' NOT NULL,
 );
 
 #

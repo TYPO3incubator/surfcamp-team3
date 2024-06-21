@@ -19,7 +19,7 @@ mod {
                         }
                     }
                 }
-                icon = EXT:restaurant/Resources/Public/Images/BackendLayouts/home.png
+                icon = EXT:restaurant/Resources/Public/Images/BackendLayouts/example.svg
             }
         }
     }

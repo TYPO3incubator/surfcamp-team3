@@ -89,6 +89,16 @@
             <trans-unit id="tx_restaurant_domain_model_product.image">
                 <source>Image</source>
             </trans-unit>
+
+            <trans-unit id="tt_content.type.menu_teaser">
+                <source>Menu Teaser</source>
+            </trans-unit>
+            <trans-unit id="tt_content.type.menu_teaser.description">
+                <source>A teaser element that contains text images</source>
+            </trans-unit>
+            <trans-unit id="tt_content.type.menu_teaser.items">
+                <source>Menu teaser items</source>
+            </trans-unit>
         </body>
     </file>
 </xliff>

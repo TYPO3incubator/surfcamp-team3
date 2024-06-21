@@ -1,9 +1,11 @@
 // Import variables
 @import 'Global/variables';
 
-// Import vendor & frameworks
-@import '../node_modules/bootstrap/scss/bootstrap';
-@import '../node_modules/bootstrap-icons/font/bootstrap-icons';
+// Import Bootstrap
+@import "~bootstrap/scss/bootstrap";
+@import "~bootstrap-icons/font/bootstrap-icons.css";
+@import "~hamburgers/_sass/hamburgers/types/squeeze";
+@import "~lightbox2/dist/css/lightbox.css";
 
 // Import globals
 @import 'Global/mixins';
@@ -16,4 +18,5 @@
 @import 'Contentelements/hero';
 @import "Contentelements/teaser";
 @import 'Contentelements/googleMaps';
+@import 'Contentelements/form';
 

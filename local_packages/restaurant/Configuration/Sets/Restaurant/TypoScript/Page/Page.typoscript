@@ -4,33 +4,8 @@ page {
         4 = TEXT
         4.value = <link rel="icon" href="favicon.svg">
     }
-
-    includeCSS {
-        hamburger = EXT:restaurant/Resources/Public/node_modules/hamburgers/dist/hamburgers.min.css
-        bootstrapIcons = EXT:restaurant/Resources/Public/node_modules/bootstrap-icons/font/bootstrap-icons.min.css
-        lightbox = EXT:restaurant/Resources/Public/node_modules/lightbox2/dist/css/lightbox.min.css
-        styles = EXT:restaurant/Resources/Public/Scss/styles.css
-    }
-
-    includeJSFooterlibs {
-        jquery = EXT:restaurant/Resources/Public/node_modules/jquery/dist/jquery.min.js
-        jquery.forceOnTop = 1
-        bootstrap = EXT:restaurant/Resources/Public/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js
-        lightbox = EXT:restaurant/Resources/Public/node_modules/lightbox2/dist/js/lightbox.min.js
-        jslib = EXT:restaurant/Resources/Public/JavaScript/jslib.js
-    }
-
-    includeCSS {
-        styles = EXT:restaurant/Resources/Public/Scss/styles.css
-    }
 }
 page.10 = PAGEVIEW
 page.10 {
     paths.100 = EXT:restaurant/Resources/Private/Templates/
-    includeJSFooterlibs {
-        jquery = EXT:restaurant/Resources/Public/node_modules/jquery/dist/jquery.min.js
-        jquery.forceOnTop = 1
-        bootstrap = EXT:restaurant/Resources/Public/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js
-        lightbox = EXT:restaurant/Resources/Public/node_modules/lightbox2/dist/js/lightbox.min.js
-    }
 }

@@ -2,5 +2,5 @@
 Resources/Public/Scss/styles.css.map
 Resources/Public/Scss/rte.css.map
 
-# npm
-Resources/Public/node_modules
+# vite
+Resources/Public/Vite

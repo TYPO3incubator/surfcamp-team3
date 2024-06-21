@@ -1,0 +1,7 @@
+<f:layout name="Default"/>
+<f:section name="Main">
+	<f:for each="{menuItems}" as="item">
+		<h2>{item.data.header}</h2>
+		<f:format.raw>{item.data.bodytext}</f:format.raw>
+	</f:for>
+</f:section>

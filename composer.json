@@ -35,6 +35,7 @@
     "prefer-stable": true,
     "require": {
         "php": "^8.3",
+        "praetorius/vite-asset-collector": "^1.9",
         "surfcamp/restaurant": "dev-main",
         "typo3/cms-backend": "dev-main",
         "typo3/cms-belog": "dev-main",
@@ -48,7 +49,6 @@
         "typo3/cms-fluid": "dev-main",
         "typo3/cms-form": "dev-main",
         "typo3/cms-frontend": "dev-main",
-        "typo3/cms-impexp": "^13.1@dev",
         "typo3/cms-info": "dev-main",
         "typo3/cms-install": "dev-main",
         "typo3/cms-lowlevel": "dev-main",

@@ -42,17 +42,17 @@ settings:
     type: string
     description: 'Define the copyright of this site.'
   restaurant.colors.brandColor:
-    default: '#000'
+    default: '#8B0000'
     label: 'Brand color'
     type: color
     description: 'Define the brand color of this site.'
   restaurant.colors.secondaryColor:
-    default: '#000'
+    default: '#FFD700'
     label: 'Secondary color'
     type: color
     description: 'Define the secondary color of this site.'
   restaurant.colors.thirdColor:
-    default: '#000'
+    default: '#333333'
     label: 'third color'
     type: color
     description: 'Define the third color of this site.'

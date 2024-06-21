@@ -1,4 +1,4 @@
-# TYPO3 Surfcamp Demo Template
+# TYPO3 Restaurant Template
 
 This Git repository is intended for use by our dedicated teams at the [TYPO3 Surfcamp](https://surfcamp.typo3.com/).
 
