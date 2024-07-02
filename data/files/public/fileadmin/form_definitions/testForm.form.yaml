@@ -1,0 +1,59 @@
+
+renderingOptions:
+  submitButtonLabel: Submit
+type: Form
+identifier: testForm
+label: TestForm
+prototypeName: standard
+renderables:
+  -
+    renderingOptions:
+      previousButtonLabel: 'Previous step'
+      nextButtonLabel: 'Next step'
+    type: Page
+    identifier: page-1
+    label: 'Example Form'
+    renderables:
+      -
+        defaultValue: ''
+        type: Text
+        identifier: text-1
+        label: 'Example Text'
+        properties:
+          fluidAdditionalAttributes:
+            placeholder: 'Example Placeholder'
+          elementDescription: 'Example Description'
+      -
+        defaultValue: ''
+        type: Textarea
+        identifier: textarea-1
+        label: 'Example Textarea'
+        properties:
+          elementDescription: 'Example Description'
+      -
+        defaultValue: ''
+        type: Email
+        identifier: email-1
+        label: 'Example Email address'
+        properties:
+          fluidAdditionalAttributes:
+            placeholder: john@doe.de
+            required: required
+          validationErrorMessages:
+            -
+              code: 1221560910
+              message: 'Please give a valid email address!'
+            -
+              code: 1221560718
+              message: 'Please give a valid email address!'
+            -
+              code: 1347992400
+              message: 'Please give a valid email address!'
+            -
+              code: 1347992453
+              message: 'Please give a valid email address!'
+        validators:
+          -
+            identifier: EmailAddress
+          -
+            identifier: NotEmpty
