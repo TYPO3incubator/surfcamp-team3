@@ -57,17 +57,17 @@ settings:
     type: color
     description: 'Define the third color of this site.'
   restaurant.socialMedia.facebook:
-    default: 'https://facebook.com _blank'
+    default: ''
     label: 'Facebook URL'
     type: link
     description: 'Define the Facebook URL'
   restaurant.socialMedia.instagram:
-    default: 'https://instagram.com  _blank'
+    default: ''
     label: 'Instagram URL'
     type: link
     description: 'Define the Instagram URL'
   restaurant.socialMedia.x:
-    default: 'https://x.com  _blank'
+    default: ''
     label: 'X URL'
     type: link
     description: 'Define the X URL'
