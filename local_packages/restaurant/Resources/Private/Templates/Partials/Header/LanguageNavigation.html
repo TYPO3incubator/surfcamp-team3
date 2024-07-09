@@ -4,8 +4,9 @@
             data-bs-toggle="dropdown" aria-expanded="false">
         <f:for each="{languageNavigation}" as="item">
             <f:if condition="{item.active}">
-                <f:image class="flag" src="EXT:restaurant/Resources/Public/Icons/Flags/{item.flag}.webp"
+                <f:image class="flag" src="EXT:restaurant/Resources/Public/Icons/{item.flag}.webp"
                          alt="{item.title}"/>
+                {item.navigationTitle}
             </f:if>
         </f:for>
     </button>
@@ -16,7 +17,7 @@
                 <li>
                     <a class="dropdown-item {f:if(condition: item.active, then: 'active')} {f:if(condition: item.available, else: 'text-muted')}"
                        href="{item.link}" hreflang="{item.hreflang}" title="{item.title}">
-                        <f:image class="flag" src="EXT:restaurant/Resources/Public/Icons/Flags/{item.flag}.webp"
+                        <f:image class="flag" src="EXT:restaurant/Resources/Public/Icons/{item.flag}.webp"
                                  alt="{item.title}"/>
                         {item.navigationTitle}
                     </a>
